@@ -99,11 +99,20 @@ header small {
   font-size: 12px;
 }
 
-.card {
+.swipeSurface {
   touch-action: pan-y;
+  overflow: hidden;
+  overflow: clip;
+  overflow-clip-margin: 12px;
+  overflow-anchor: none;
+}
+
+.card,
+.message {
   will-change: transform, opacity;
+  overflow-anchor: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .card { will-change: auto; }
+  .card, .message { will-change: auto; }
 }
