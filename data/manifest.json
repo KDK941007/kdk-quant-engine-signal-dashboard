@@ -1,9 +1,17 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T09:21:30.573Z",
+  "generatedAt": "2026-08-13T10:07:46.016Z",
   "full": {
     "path": "data/full/signal_dashboard.json",
     "sha256": "ee63772b95b03c77053adf3a37d06ec2f94e5d59dbb8c633a4615df8109c7596"
   },
-  "conditions": []
+  "conditions": [
+    {
+      "folder": "20240101-20260812",
+      "requestedStartDate": "2024-01-01",
+      "requestedEndDate": "2026-08-12",
+      "path": "data/conditions/20240101-20260812/signal_dashboard.json",
+      "sha256": "59a9a215f9d16610f40f87ea7f82f89dcfffa2cafac4a775ce9d068af66646fd"
+    }
+  ]
 }
