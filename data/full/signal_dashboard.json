@@ -1,0 +1,767 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-13T04:45:32.241Z",
+  "analysis": {
+    "kind": "FULL",
+    "requestedStartDate": null,
+    "requestedEndDate": null,
+    "actualStartDate": "2017-01-04",
+    "actualEndDate": "2026-08-12"
+  },
+  "signals": [
+    {
+      "session": "DAY",
+      "analysisType": "STANDARD",
+      "direction": "LONG",
+      "status": "READY",
+      "rule": {
+        "ruleId": "KDK-C0099",
+        "directionRank": 1,
+        "conditionText": "init5Move >= 50 AND init3Pct >= 0.001271",
+        "metrics": {
+          "profitFactor": 2.9112943948830163,
+          "winRate": 0.6867088607594937,
+          "averagePnL": 179.66772151898735,
+          "tradeCount": 316
+        },
+        "entry": {
+          "judgmentTime": "09:30（5本目確定後）",
+          "entryTime": "09:30",
+          "entryPriceDescription": "6本目始値",
+          "conditions": [
+            {
+              "feature": "init5Move",
+              "operator": ">=",
+              "threshold": 50,
+              "description": "ザラ場開始から5本目までの値動き",
+              "unit": "円",
+              "availability": "AFTER_10M_5_BARS",
+              "formula": "C5 - O1",
+              "calculator": {
+                "kind": "DIFFERENCE",
+                "inputs": [
+                  {
+                    "id": "close",
+                    "label": "5本目終値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "5",
+                    "priceType": "CLOSE"
+                  },
+                  {
+                    "id": "open",
+                    "label": "1本目始値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1",
+                    "priceType": "OPEN"
+                  }
+                ]
+              }
+            },
+            {
+              "feature": "init3Pct",
+              "operator": ">=",
+              "threshold": 0.0012711003169799142,
+              "description": "ザラ場開始から3本目までの価格変化率",
+              "unit": "%",
+              "availability": "AFTER_10M_3_BARS",
+              "formula": "(C3 - O1) / O1",
+              "calculator": {
+                "kind": "PCT_CHANGE",
+                "inputs": [
+                  {
+                    "id": "close",
+                    "label": "3本目終値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "3",
+                    "priceType": "CLOSE"
+                  },
+                  {
+                    "id": "open",
+                    "label": "1本目始値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1",
+                    "priceType": "OPEN"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "exit": {
+          "scenarioName": "tp500_sl150",
+          "strategy": "FIXED_TP_SL",
+          "takeProfit": 500,
+          "stopLoss": 150,
+          "takeProfitAtrMultiplier": null,
+          "stopLossAtrMultiplier": null,
+          "recentLookbackBars": null
+        },
+        "yearlyValidation": [
+          {
+            "year": "2017",
+            "status": "PASS",
+            "tradeCount": 10
+          },
+          {
+            "year": "2018",
+            "status": "PASS",
+            "tradeCount": 29
+          },
+          {
+            "year": "2019",
+            "status": "PASS",
+            "tradeCount": 15
+          },
+          {
+            "year": "2020",
+            "status": "PASS",
+            "tradeCount": 34
+          },
+          {
+            "year": "2021",
+            "status": "PASS",
+            "tradeCount": 27
+          },
+          {
+            "year": "2022",
+            "status": "PASS",
+            "tradeCount": 40
+          },
+          {
+            "year": "2023",
+            "status": "PASS",
+            "tradeCount": 33
+          },
+          {
+            "year": "2024",
+            "status": "PASS",
+            "tradeCount": 43
+          },
+          {
+            "year": "2025",
+            "status": "PASS",
+            "tradeCount": 41
+          },
+          {
+            "year": "2026",
+            "status": "PASS",
+            "tradeCount": 44
+          }
+        ]
+      }
+    },
+    {
+      "session": "DAY",
+      "analysisType": "STANDARD",
+      "direction": "SHORT",
+      "status": "READY",
+      "rule": {
+        "ruleId": "KDK-C0156",
+        "directionRank": 1,
+        "conditionText": "init5Pct <= -0.001434 AND bar1BodyRatio >= 0.671667",
+        "metrics": {
+          "profitFactor": 2.930151338766007,
+          "winRate": 0.5966386554621849,
+          "averagePnL": 139.32773109243698,
+          "tradeCount": 119
+        },
+        "entry": {
+          "judgmentTime": "09:30（5本目確定後）",
+          "entryTime": "09:30",
+          "entryPriceDescription": "6本目始値",
+          "conditions": [
+            {
+              "feature": "init5Pct",
+              "operator": "<=",
+              "threshold": -0.0014342712717616136,
+              "description": "ザラ場開始から5本目までの価格変化率",
+              "unit": "%",
+              "availability": "AFTER_10M_5_BARS",
+              "formula": "(C5 - O1) / O1",
+              "calculator": {
+                "kind": "PCT_CHANGE",
+                "inputs": [
+                  {
+                    "id": "close",
+                    "label": "5本目終値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "5",
+                    "priceType": "CLOSE"
+                  },
+                  {
+                    "id": "open",
+                    "label": "1本目始値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1",
+                    "priceType": "OPEN"
+                  }
+                ]
+              }
+            },
+            {
+              "feature": "bar1BodyRatio",
+              "operator": ">=",
+              "threshold": 0.6716666666666679,
+              "description": "ザラ場1本目のローソク足実体を値幅で割った比率",
+              "unit": "%",
+              "availability": "AFTER_10M_1_BAR",
+              "formula": "abs(C1 - O1) / (H1 - L1)",
+              "calculator": {
+                "kind": "ABS_BODY_RATIO",
+                "inputs": [
+                  {
+                    "id": "open",
+                    "label": "1本目始値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1",
+                    "priceType": "OPEN"
+                  },
+                  {
+                    "id": "high",
+                    "label": "1本目高値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1",
+                    "priceType": "HIGH"
+                  },
+                  {
+                    "id": "low",
+                    "label": "1本目安値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1",
+                    "priceType": "LOW"
+                  },
+                  {
+                    "id": "close",
+                    "label": "1本目終値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1",
+                    "priceType": "CLOSE"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "exit": {
+          "scenarioName": "prev_day_high_low",
+          "strategy": "PREV_DAY_HIGH_LOW",
+          "takeProfit": 0,
+          "stopLoss": 0,
+          "takeProfitAtrMultiplier": null,
+          "stopLossAtrMultiplier": null,
+          "recentLookbackBars": null
+        },
+        "yearlyValidation": [
+          {
+            "year": "2017",
+            "status": "PASS",
+            "tradeCount": 7
+          },
+          {
+            "year": "2018",
+            "status": "PASS",
+            "tradeCount": 9
+          },
+          {
+            "year": "2019",
+            "status": "PASS",
+            "tradeCount": 8
+          },
+          {
+            "year": "2020",
+            "status": "PASS",
+            "tradeCount": 15
+          },
+          {
+            "year": "2021",
+            "status": "FAIL",
+            "tradeCount": 11
+          },
+          {
+            "year": "2022",
+            "status": "PASS",
+            "tradeCount": 19
+          },
+          {
+            "year": "2023",
+            "status": "PASS",
+            "tradeCount": 9
+          },
+          {
+            "year": "2024",
+            "status": "PASS",
+            "tradeCount": 10
+          },
+          {
+            "year": "2025",
+            "status": "PASS",
+            "tradeCount": 17
+          },
+          {
+            "year": "2026",
+            "status": "PASS",
+            "tradeCount": 14
+          }
+        ]
+      }
+    },
+    {
+      "session": "DAY",
+      "analysisType": "CROSS",
+      "direction": "LONG",
+      "status": "ANALYSIS_NOT_FOUND",
+      "rule": null
+    },
+    {
+      "session": "DAY",
+      "analysisType": "CROSS",
+      "direction": "SHORT",
+      "status": "ANALYSIS_NOT_FOUND",
+      "rule": null
+    },
+    {
+      "session": "EVENING",
+      "analysisType": "STANDARD",
+      "direction": "LONG",
+      "status": "READY",
+      "rule": {
+        "ruleId": "KDK-E0079",
+        "directionRank": 1,
+        "conditionText": "eveningInit3Pct >= 0.001075 AND eveningInit5RangePct >= 0.004550",
+        "metrics": {
+          "profitFactor": 3.4688109649342205,
+          "winRate": 0.6906077348066298,
+          "averagePnL": 272.6740331491713,
+          "tradeCount": 181
+        },
+        "entry": {
+          "judgmentTime": "夕場5本目確定後",
+          "entryTime": "夕場6本目開始時",
+          "entryPriceDescription": "夕場6本目始値",
+          "conditions": [
+            {
+              "feature": "eveningInit3Pct",
+              "operator": ">=",
+              "threshold": 0.0010753900207769132,
+              "description": "夕場開始から3本目までの価格変化率",
+              "unit": "%",
+              "availability": "AFTER_10M_3_BARS",
+              "formula": "(EC3 - EO1) / EO1",
+              "calculator": {
+                "kind": "PCT_CHANGE",
+                "inputs": [
+                  {
+                    "id": "close",
+                    "label": "3本目終値",
+                    "timeframe": "EVENING_10M",
+                    "targetBar": "3",
+                    "priceType": "CLOSE"
+                  },
+                  {
+                    "id": "open",
+                    "label": "1本目始値",
+                    "timeframe": "EVENING_10M",
+                    "targetBar": "1",
+                    "priceType": "OPEN"
+                  }
+                ]
+              }
+            },
+            {
+              "feature": "eveningInit5RangePct",
+              "operator": ">=",
+              "threshold": 0.004549957260062518,
+              "description": "夕場開始から5本目までの値幅を始値で割った比率",
+              "unit": "%",
+              "availability": "AFTER_10M_5_BARS",
+              "formula": "(EH1-5 - EL1-5) / EO1",
+              "calculator": {
+                "kind": "RANGE_PCT",
+                "inputs": [
+                  {
+                    "id": "high",
+                    "label": "5本最高値",
+                    "timeframe": "EVENING_10M",
+                    "targetBar": "1-5",
+                    "priceType": "HIGH"
+                  },
+                  {
+                    "id": "low",
+                    "label": "5本最安値",
+                    "timeframe": "EVENING_10M",
+                    "targetBar": "1-5",
+                    "priceType": "LOW"
+                  },
+                  {
+                    "id": "open",
+                    "label": "1本目始値",
+                    "timeframe": "EVENING_10M",
+                    "targetBar": "1",
+                    "priceType": "OPEN"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "exit": {
+          "scenarioName": "recent_high_low_24",
+          "strategy": "RECENT_HIGH_LOW",
+          "takeProfit": 0,
+          "stopLoss": 0,
+          "takeProfitAtrMultiplier": null,
+          "stopLossAtrMultiplier": null,
+          "recentLookbackBars": 24
+        },
+        "yearlyValidation": [
+          {
+            "year": "2017",
+            "status": "FAIL",
+            "tradeCount": 0
+          },
+          {
+            "year": "2018",
+            "status": "PASS",
+            "tradeCount": 13
+          },
+          {
+            "year": "2019",
+            "status": "FAIL",
+            "tradeCount": 0
+          },
+          {
+            "year": "2020",
+            "status": "PASS",
+            "tradeCount": 27
+          },
+          {
+            "year": "2021",
+            "status": "PASS",
+            "tradeCount": 18
+          },
+          {
+            "year": "2022",
+            "status": "PASS",
+            "tradeCount": 23
+          },
+          {
+            "year": "2023",
+            "status": "PASS",
+            "tradeCount": 16
+          },
+          {
+            "year": "2024",
+            "status": "PASS",
+            "tradeCount": 28
+          },
+          {
+            "year": "2025",
+            "status": "PASS",
+            "tradeCount": 21
+          },
+          {
+            "year": "2026",
+            "status": "PASS",
+            "tradeCount": 35
+          }
+        ]
+      }
+    },
+    {
+      "session": "EVENING",
+      "analysisType": "STANDARD",
+      "direction": "SHORT",
+      "status": "RANKING_EMPTY",
+      "rule": null
+    },
+    {
+      "session": "EVENING",
+      "analysisType": "CROSS",
+      "direction": "LONG",
+      "status": "READY",
+      "rule": {
+        "ruleId": "KDK-X0003",
+        "directionRank": 1,
+        "conditionText": "init5Pct >= 0.001712 AND eveningInit3Pct >= 0.001075",
+        "metrics": {
+          "profitFactor": 3.6303751143641354,
+          "winRate": 0.7058823529411765,
+          "averagePnL": 241.5966386554622,
+          "tradeCount": 119
+        },
+        "entry": {
+          "judgmentTime": "夕場5本目確定後",
+          "entryTime": "夕場6本目開始時",
+          "entryPriceDescription": "夕場6本目始値",
+          "conditions": [
+            {
+              "feature": "init5Pct",
+              "operator": ">=",
+              "threshold": 0.0017115601260633494,
+              "description": "ザラ場開始から5本目までの価格変化率",
+              "unit": "%",
+              "availability": "AFTER_10M_5_BARS",
+              "formula": "(C5 - O1) / O1",
+              "calculator": {
+                "kind": "PCT_CHANGE",
+                "inputs": [
+                  {
+                    "id": "close",
+                    "label": "5本目終値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "5",
+                    "priceType": "CLOSE"
+                  },
+                  {
+                    "id": "open",
+                    "label": "1本目始値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1",
+                    "priceType": "OPEN"
+                  }
+                ]
+              }
+            },
+            {
+              "feature": "eveningInit3Pct",
+              "operator": ">=",
+              "threshold": 0.0010753900207769132,
+              "description": "夕場開始から3本目までの価格変化率",
+              "unit": "%",
+              "availability": "AFTER_10M_3_BARS",
+              "formula": "(EC3 - EO1) / EO1",
+              "calculator": {
+                "kind": "PCT_CHANGE",
+                "inputs": [
+                  {
+                    "id": "close",
+                    "label": "3本目終値",
+                    "timeframe": "EVENING_10M",
+                    "targetBar": "3",
+                    "priceType": "CLOSE"
+                  },
+                  {
+                    "id": "open",
+                    "label": "1本目始値",
+                    "timeframe": "EVENING_10M",
+                    "targetBar": "1",
+                    "priceType": "OPEN"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "exit": {
+          "scenarioName": "atr_tp2_sl1",
+          "strategy": "ATR",
+          "takeProfit": 0,
+          "stopLoss": 0,
+          "takeProfitAtrMultiplier": 2,
+          "stopLossAtrMultiplier": 1,
+          "recentLookbackBars": null
+        },
+        "yearlyValidation": [
+          {
+            "year": "2017",
+            "status": "WATCH",
+            "tradeCount": 3
+          },
+          {
+            "year": "2018",
+            "status": "PASS",
+            "tradeCount": 7
+          },
+          {
+            "year": "2019",
+            "status": "WATCH",
+            "tradeCount": 4
+          },
+          {
+            "year": "2020",
+            "status": "PASS",
+            "tradeCount": 19
+          },
+          {
+            "year": "2021",
+            "status": "PASS",
+            "tradeCount": 9
+          },
+          {
+            "year": "2022",
+            "status": "PASS",
+            "tradeCount": 12
+          },
+          {
+            "year": "2023",
+            "status": "PASS",
+            "tradeCount": 11
+          },
+          {
+            "year": "2024",
+            "status": "PASS",
+            "tradeCount": 17
+          },
+          {
+            "year": "2025",
+            "status": "PASS",
+            "tradeCount": 16
+          },
+          {
+            "year": "2026",
+            "status": "PASS",
+            "tradeCount": 21
+          }
+        ]
+      }
+    },
+    {
+      "session": "EVENING",
+      "analysisType": "CROSS",
+      "direction": "SHORT",
+      "status": "READY",
+      "rule": {
+        "ruleId": "KDK-X0010",
+        "directionRank": 1,
+        "conditionText": "init3Pct <= -0.001199 AND init5RangePct >= 0.004847",
+        "metrics": {
+          "profitFactor": 3.0954347826086956,
+          "winRate": 0.6414141414141414,
+          "averagePnL": 194.72727272727272,
+          "tradeCount": 198
+        },
+        "entry": {
+          "judgmentTime": "夕場5本目確定後",
+          "entryTime": "夕場6本目開始時",
+          "entryPriceDescription": "夕場6本目始値",
+          "conditions": [
+            {
+              "feature": "init3Pct",
+              "operator": "<=",
+              "threshold": -0.001199411497489247,
+              "description": "ザラ場開始から3本目までの価格変化率",
+              "unit": "%",
+              "availability": "AFTER_10M_3_BARS",
+              "formula": "(C3 - O1) / O1",
+              "calculator": {
+                "kind": "PCT_CHANGE",
+                "inputs": [
+                  {
+                    "id": "close",
+                    "label": "3本目終値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "3",
+                    "priceType": "CLOSE"
+                  },
+                  {
+                    "id": "open",
+                    "label": "1本目始値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1",
+                    "priceType": "OPEN"
+                  }
+                ]
+              }
+            },
+            {
+              "feature": "init5RangePct",
+              "operator": ">=",
+              "threshold": 0.004847303964301029,
+              "description": "ザラ場開始から5本目までの値幅を始値で割った比率",
+              "unit": "%",
+              "availability": "AFTER_10M_5_BARS",
+              "formula": "(H1-5 - L1-5) / O1",
+              "calculator": {
+                "kind": "RANGE_PCT",
+                "inputs": [
+                  {
+                    "id": "high",
+                    "label": "5本最高値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1-5",
+                    "priceType": "HIGH"
+                  },
+                  {
+                    "id": "low",
+                    "label": "5本最安値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1-5",
+                    "priceType": "LOW"
+                  },
+                  {
+                    "id": "open",
+                    "label": "1本目始値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1",
+                    "priceType": "OPEN"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "exit": {
+          "scenarioName": "atr_tp1_sl1",
+          "strategy": "ATR",
+          "takeProfit": 0,
+          "stopLoss": 0,
+          "takeProfitAtrMultiplier": 1,
+          "stopLossAtrMultiplier": 1,
+          "recentLookbackBars": null
+        },
+        "yearlyValidation": [
+          {
+            "year": "2017",
+            "status": "PASS",
+            "tradeCount": 7
+          },
+          {
+            "year": "2018",
+            "status": "PASS",
+            "tradeCount": 26
+          },
+          {
+            "year": "2019",
+            "status": "PASS",
+            "tradeCount": 9
+          },
+          {
+            "year": "2020",
+            "status": "PASS",
+            "tradeCount": 23
+          },
+          {
+            "year": "2021",
+            "status": "FAIL",
+            "tradeCount": 17
+          },
+          {
+            "year": "2022",
+            "status": "PASS",
+            "tradeCount": 31
+          },
+          {
+            "year": "2023",
+            "status": "PASS",
+            "tradeCount": 7
+          },
+          {
+            "year": "2024",
+            "status": "PASS",
+            "tradeCount": 28
+          },
+          {
+            "year": "2025",
+            "status": "PASS",
+            "tradeCount": 24
+          },
+          {
+            "year": "2026",
+            "status": "PASS",
+            "tradeCount": 26
+          }
+        ]
+      }
+    }
+  ]
+}
