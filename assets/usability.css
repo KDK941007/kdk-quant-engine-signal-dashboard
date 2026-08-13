@@ -25,6 +25,21 @@ header small {
   color: #092f3a;
 }
 
+.evaluationShortcut {
+  margin-left: auto;
+  border: 0;
+  border-radius: 999px;
+  padding: 7px 12px;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.evaluationShortcut.entry { background: #087f5b; }
+.evaluationShortcut.no-entry { background: #b42318; }
+.evaluationShortcut.waiting { background: #9a6700; }
+
 .filters > button:focus-visible {
   outline: 3px solid #93b4ff;
   outline-offset: 2px;
