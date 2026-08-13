@@ -59,3 +59,49 @@
   font-size: 13px;
   line-height: 1.6;
 }
+
+.quickSwitch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 10px 0 12px;
+  padding: 10px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 5px 18px #23304a1c;
+}
+
+.quickSwitch small {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-weight: 800;
+  color: #596579;
+}
+
+.quickSwitch .tabs button {
+  min-height: 42px;
+  padding: 8px 5px;
+}
+
+.quickSwitch p {
+  grid-column: 1 / -1;
+  margin: 0;
+  text-align: center;
+  color: #667085;
+  font-size: 11px;
+}
+
+.card {
+  touch-action: pan-y;
+}
+
+@media (max-width: 380px) {
+  .quickSwitch {
+    grid-template-columns: 1fr;
+  }
+
+  .quickSwitch p {
+    grid-column: 1;
+  }
+}
