@@ -9,6 +9,22 @@
   cursor: pointer;
 }
 
+header small {
+  display: block;
+  margin-top: 7px;
+  color: #d7e1f4;
+  font-size: 11px;
+}
+
+.badge.LONG {
+  background: #d7193f;
+}
+
+.badge.SHORT {
+  background: #55bdd2;
+  color: #092f3a;
+}
+
 .filters > button:focus-visible {
   outline: 3px solid #93b4ff;
   outline-offset: 2px;
@@ -61,37 +77,33 @@
 }
 
 .quickSwitch {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
-  margin: 10px 0 12px;
-  padding: 10px;
-  border-radius: 14px;
-  background: white;
-  box-shadow: 0 5px 18px #23304a1c;
+  padding: 0 12px 10px;
+  border-top: 1px solid #e4e9f1;
 }
 
-.quickSwitch small {
+.filters:not(.collapsed) .quickSwitch {
+  display: none;
+}
+
+.quickSwitch > small {
   display: block;
-  margin-bottom: 5px;
-  font-size: 11px;
-  font-weight: 800;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 10px;
   color: #596579;
 }
 
 .quickSwitch .tabs button {
-  min-height: 42px;
-  padding: 8px 5px;
-}
-
-.quickSwitch p {
-  grid-column: 1;
-  margin: 0;
-  text-align: center;
-  color: #667085;
-  font-size: 11px;
+  min-height: 34px;
+  padding: 5px;
+  font-size: 12px;
 }
 
 .card {
   touch-action: pan-y;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card { will-change: auto; }
 }
