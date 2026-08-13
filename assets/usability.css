@@ -1,0 +1,79 @@
+.filters > button {
+  min-height: 72px;
+  border: 2px solid #b8c7dd;
+  background: #f8faff;
+  border-radius: 14px;
+  padding: 12px 14px;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.filters > button:focus-visible {
+  outline: 3px solid #93b4ff;
+  outline-offset: 2px;
+}
+
+.filterToggleIcon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #1d4ed8;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.filters:not(.collapsed) .filterToggleIcon {
+  background: #344054;
+}
+
+.exitHelp {
+  white-space: pre-line;
+  line-height: 1.65;
+}
+
+.exitHelp::first-line {
+  font-weight: 800;
+}
+
+.confirmationSelector {
+  margin: 10px 0 12px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #eef4ff;
+}
+
+.confirmationSelector label,
+.confirmationSelector select {
+  display: block;
+  width: 100%;
+}
+
+.confirmationSelector label {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.confirmationSelector select {
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #98a2b3;
+  border-radius: 8px;
+  background: white;
+  font-size: 16px;
+}
+
+.comparison {
+  margin-top: 8px;
+  padding: 9px;
+  border-left: 4px solid #1d4ed8;
+  background: #f4f7fb;
+  white-space: pre-line;
+  font-size: 13px;
+  line-height: 1.6;
+}
