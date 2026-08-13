@@ -57,6 +57,18 @@ header small {
   font-weight: 800;
 }
 
+.exitScenario { display: block; font: 700 17px ui-monospace, monospace; }
+.exitCondition > small { display: block; margin-top: 5px; color: #596579; line-height: 1.5; }
+.exitPrices { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+.exitPrices > div { display: grid; gap: 5px; padding: 10px; border-radius: 10px; background: #f4f7fb; }
+.exitPrices span { font-size: 12px; font-weight: 800; }
+.exitPrices b { font-size: 12px; line-height: 1.45; }
+.exitPrices strong { color: #1d4ed8; font-size: 17px; }
+.exitInputs { display: grid; gap: 8px; margin-top: 10px; }
+.exitInputs label { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.exitInputs label > span { font-size: 13px; font-weight: 700; }
+.exitInputs input { width: 43%; padding: 9px; border: 1px solid #aeb8c8; border-radius: 8px; font-size: 16px; }
+
 .confirmationSelector {
   margin: 10px 0 12px;
   padding: 10px;
