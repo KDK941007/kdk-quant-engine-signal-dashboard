@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T04:45:32.241Z",
+  "generatedAt": "2026-08-13T05:29:49.141Z",
   "analysis": {
     "kind": "FULL",
     "requestedStartDate": null,
@@ -45,17 +45,23 @@
                     "label": "5本目終値",
                     "timeframe": "DAY_10M",
                     "targetBar": "5",
-                    "priceType": "CLOSE"
+                    "priceType": "CLOSE",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "open",
                     "label": "1本目始値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
-                    "priceType": "OPEN"
+                    "priceType": "OPEN",
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
-              }
+              },
+              "value": null,
+              "source": "INPUT"
             },
             {
               "feature": "init3Pct",
@@ -73,17 +79,23 @@
                     "label": "3本目終値",
                     "timeframe": "DAY_10M",
                     "targetBar": "3",
-                    "priceType": "CLOSE"
+                    "priceType": "CLOSE",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "open",
                     "label": "1本目始値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
-                    "priceType": "OPEN"
+                    "priceType": "OPEN",
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
-              }
+              },
+              "value": null,
+              "source": "INPUT"
             }
           ]
         },
@@ -100,52 +112,72 @@
           {
             "year": "2017",
             "status": "PASS",
-            "tradeCount": 10
+            "tradeCount": 10,
+            "profitFactor": 338,
+            "averagePnL": 168.5
           },
           {
             "year": "2018",
             "status": "PASS",
-            "tradeCount": 29
+            "tradeCount": 29,
+            "profitFactor": 1.6200657894736843,
+            "averagePnL": 65
           },
           {
             "year": "2019",
             "status": "PASS",
-            "tradeCount": 15
+            "tradeCount": 15,
+            "profitFactor": 8.065217391304348,
+            "averagePnL": 108.33333333333333
           },
           {
             "year": "2020",
             "status": "PASS",
-            "tradeCount": 34
+            "tradeCount": 34,
+            "profitFactor": 3.4467640918580376,
+            "averagePnL": 172.35294117647058
           },
           {
             "year": "2021",
             "status": "PASS",
-            "tradeCount": 27
+            "tradeCount": 27,
+            "profitFactor": 3.3221288515406164,
+            "averagePnL": 153.5185185185185
           },
           {
             "year": "2022",
             "status": "PASS",
-            "tradeCount": 40
+            "tradeCount": 40,
+            "profitFactor": 3.6666666666666665,
+            "averagePnL": 146
           },
           {
             "year": "2023",
             "status": "PASS",
-            "tradeCount": 33
+            "tradeCount": 33,
+            "profitFactor": 2.2004310344827585,
+            "averagePnL": 84.39393939393939
           },
           {
             "year": "2024",
             "status": "PASS",
-            "tradeCount": 43
+            "tradeCount": 43,
+            "profitFactor": 2.0753968253968256,
+            "averagePnL": 126.04651162790698
           },
           {
             "year": "2025",
             "status": "PASS",
-            "tradeCount": 41
+            "tradeCount": 41,
+            "profitFactor": 2.6555455365193867,
+            "averagePnL": 223.90243902439025
           },
           {
             "year": "2026",
             "status": "PASS",
-            "tradeCount": 44
+            "tradeCount": 44,
+            "profitFactor": 3.5646401118099234,
+            "averagePnL": 417.04545454545456
           }
         ]
       }
@@ -186,17 +218,23 @@
                     "label": "5本目終値",
                     "timeframe": "DAY_10M",
                     "targetBar": "5",
-                    "priceType": "CLOSE"
+                    "priceType": "CLOSE",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "open",
                     "label": "1本目始値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
-                    "priceType": "OPEN"
+                    "priceType": "OPEN",
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
-              }
+              },
+              "value": null,
+              "source": "INPUT"
             },
             {
               "feature": "bar1BodyRatio",
@@ -214,31 +252,41 @@
                     "label": "1本目始値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
-                    "priceType": "OPEN"
+                    "priceType": "OPEN",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "high",
                     "label": "1本目高値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
-                    "priceType": "HIGH"
+                    "priceType": "HIGH",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "low",
                     "label": "1本目安値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
-                    "priceType": "LOW"
+                    "priceType": "LOW",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "close",
                     "label": "1本目終値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
-                    "priceType": "CLOSE"
+                    "priceType": "CLOSE",
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
-              }
+              },
+              "value": null,
+              "source": "INPUT"
             }
           ]
         },
@@ -255,52 +303,72 @@
           {
             "year": "2017",
             "status": "PASS",
-            "tradeCount": 7
+            "tradeCount": 7,
+            "profitFactor": 4.925,
+            "averagePnL": 112.14285714285714
           },
           {
             "year": "2018",
             "status": "PASS",
-            "tradeCount": 9
+            "tradeCount": 9,
+            "profitFactor": 10.222222222222221,
+            "averagePnL": 184.44444444444446
           },
           {
             "year": "2019",
             "status": "PASS",
-            "tradeCount": 8
+            "tradeCount": 8,
+            "profitFactor": 8.384615384615385,
+            "averagePnL": 120
           },
           {
             "year": "2020",
             "status": "PASS",
-            "tradeCount": 15
+            "tradeCount": 15,
+            "profitFactor": 3.4076923076923076,
+            "averagePnL": 104.33333333333333
           },
           {
             "year": "2021",
             "status": "FAIL",
-            "tradeCount": 11
+            "tradeCount": 11,
+            "profitFactor": 0.8101851851851852,
+            "averagePnL": -18.636363636363637
           },
           {
             "year": "2022",
             "status": "PASS",
-            "tradeCount": 19
+            "tradeCount": 19,
+            "profitFactor": 2.0093457943925235,
+            "averagePnL": 56.8421052631579
           },
           {
             "year": "2023",
             "status": "PASS",
-            "tradeCount": 9
+            "tradeCount": 9,
+            "profitFactor": 1.8444444444444446,
+            "averagePnL": 42.22222222222222
           },
           {
             "year": "2024",
             "status": "PASS",
-            "tradeCount": 10
+            "tradeCount": 10,
+            "profitFactor": 1.7572463768115942,
+            "averagePnL": 104.5
           },
           {
             "year": "2025",
             "status": "PASS",
-            "tradeCount": 17
+            "tradeCount": 17,
+            "profitFactor": 4.8053097345132745,
+            "averagePnL": 252.94117647058823
           },
           {
             "year": "2026",
             "status": "PASS",
-            "tradeCount": 14
+            "tradeCount": 14,
+            "profitFactor": 3.1594827586206895,
+            "averagePnL": 357.85714285714283
           }
         ]
       }
@@ -355,17 +423,23 @@
                     "label": "3本目終値",
                     "timeframe": "EVENING_10M",
                     "targetBar": "3",
-                    "priceType": "CLOSE"
+                    "priceType": "CLOSE",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "open",
                     "label": "1本目始値",
                     "timeframe": "EVENING_10M",
                     "targetBar": "1",
-                    "priceType": "OPEN"
+                    "priceType": "OPEN",
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
-              }
+              },
+              "value": null,
+              "source": "INPUT"
             },
             {
               "feature": "eveningInit5RangePct",
@@ -383,24 +457,32 @@
                     "label": "5本最高値",
                     "timeframe": "EVENING_10M",
                     "targetBar": "1-5",
-                    "priceType": "HIGH"
+                    "priceType": "HIGH",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "low",
                     "label": "5本最安値",
                     "timeframe": "EVENING_10M",
                     "targetBar": "1-5",
-                    "priceType": "LOW"
+                    "priceType": "LOW",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "open",
                     "label": "1本目始値",
                     "timeframe": "EVENING_10M",
                     "targetBar": "1",
-                    "priceType": "OPEN"
+                    "priceType": "OPEN",
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
-              }
+              },
+              "value": null,
+              "source": "INPUT"
             }
           ]
         },
@@ -416,53 +498,73 @@
         "yearlyValidation": [
           {
             "year": "2017",
-            "status": "FAIL",
-            "tradeCount": 0
+            "status": "NO_TRADE",
+            "tradeCount": 0,
+            "profitFactor": null,
+            "averagePnL": null
           },
           {
             "year": "2018",
             "status": "PASS",
-            "tradeCount": 13
+            "tradeCount": 13,
+            "profitFactor": 3.361111111111111,
+            "averagePnL": 98.07692307692308
           },
           {
             "year": "2019",
-            "status": "FAIL",
-            "tradeCount": 0
+            "status": "NO_TRADE",
+            "tradeCount": 0,
+            "profitFactor": null,
+            "averagePnL": null
           },
           {
             "year": "2020",
             "status": "PASS",
-            "tradeCount": 27
+            "tradeCount": 27,
+            "profitFactor": 1.4363693075483468,
+            "averagePnL": 51.81481481481482
           },
           {
             "year": "2021",
             "status": "PASS",
-            "tradeCount": 18
+            "tradeCount": 18,
+            "profitFactor": 4.674846625766871,
+            "averagePnL": 166.38888888888889
           },
           {
             "year": "2022",
             "status": "PASS",
-            "tradeCount": 23
+            "tradeCount": 23,
+            "profitFactor": 2.1550925925925926,
+            "averagePnL": 108.47826086956522
           },
           {
             "year": "2023",
             "status": "PASS",
-            "tradeCount": 16
+            "tradeCount": 16,
+            "profitFactor": 5.135338345864661,
+            "averagePnL": 171.875
           },
           {
             "year": "2024",
             "status": "PASS",
-            "tradeCount": 28
+            "tradeCount": 28,
+            "profitFactor": 3.486196319018405,
+            "averagePnL": 289.4642857142857
           },
           {
             "year": "2025",
             "status": "PASS",
-            "tradeCount": 21
+            "tradeCount": 21,
+            "profitFactor": 2.3413333333333335,
+            "averagePnL": 239.52380952380952
           },
           {
             "year": "2026",
             "status": "PASS",
-            "tradeCount": 35
+            "tradeCount": 35,
+            "profitFactor": 5.522788203753351,
+            "averagePnL": 723
           }
         ]
       }
@@ -510,17 +612,23 @@
                     "label": "5本目終値",
                     "timeframe": "DAY_10M",
                     "targetBar": "5",
-                    "priceType": "CLOSE"
+                    "priceType": "CLOSE",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "open",
                     "label": "1本目始値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
-                    "priceType": "OPEN"
+                    "priceType": "OPEN",
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
-              }
+              },
+              "value": null,
+              "source": "INPUT"
             },
             {
               "feature": "eveningInit3Pct",
@@ -538,17 +646,23 @@
                     "label": "3本目終値",
                     "timeframe": "EVENING_10M",
                     "targetBar": "3",
-                    "priceType": "CLOSE"
+                    "priceType": "CLOSE",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "open",
                     "label": "1本目始値",
                     "timeframe": "EVENING_10M",
                     "targetBar": "1",
-                    "priceType": "OPEN"
+                    "priceType": "OPEN",
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
-              }
+              },
+              "value": null,
+              "source": "INPUT"
             }
           ]
         },
@@ -564,53 +678,73 @@
         "yearlyValidation": [
           {
             "year": "2017",
-            "status": "WATCH",
-            "tradeCount": 3
+            "status": "PASS",
+            "tradeCount": 3,
+            "profitFactor": null,
+            "averagePnL": 141.66666666666666
           },
           {
             "year": "2018",
             "status": "PASS",
-            "tradeCount": 7
+            "tradeCount": 7,
+            "profitFactor": 7.869565217391305,
+            "averagePnL": 112.85714285714286
           },
           {
             "year": "2019",
-            "status": "WATCH",
-            "tradeCount": 4
+            "status": "PASS",
+            "tradeCount": 4,
+            "profitFactor": null,
+            "averagePnL": 135
           },
           {
             "year": "2020",
             "status": "PASS",
-            "tradeCount": 19
+            "tradeCount": 19,
+            "profitFactor": 1.8620689655172413,
+            "averagePnL": 59.21052631578947
           },
           {
             "year": "2021",
             "status": "PASS",
-            "tradeCount": 9
+            "tradeCount": 9,
+            "profitFactor": 2.074468085106383,
+            "averagePnL": 112.22222222222223
           },
           {
             "year": "2022",
             "status": "PASS",
-            "tradeCount": 12
+            "tradeCount": 12,
+            "profitFactor": 2.4966887417218544,
+            "averagePnL": 94.16666666666667
           },
           {
             "year": "2023",
             "status": "PASS",
-            "tradeCount": 11
+            "tradeCount": 11,
+            "profitFactor": 2.1132075471698113,
+            "averagePnL": 80.45454545454545
           },
           {
             "year": "2024",
             "status": "PASS",
-            "tradeCount": 17
+            "tradeCount": 17,
+            "profitFactor": 2.9295392953929538,
+            "averagePnL": 209.41176470588235
           },
           {
             "year": "2025",
             "status": "PASS",
-            "tradeCount": 16
+            "tradeCount": 16,
+            "profitFactor": 2.067245119305857,
+            "averagePnL": 153.75
           },
           {
             "year": "2026",
             "status": "PASS",
-            "tradeCount": 21
+            "tradeCount": 21,
+            "profitFactor": 6.862369337979094,
+            "averagePnL": 801.1904761904761
           }
         ]
       }
@@ -651,17 +785,23 @@
                     "label": "3本目終値",
                     "timeframe": "DAY_10M",
                     "targetBar": "3",
-                    "priceType": "CLOSE"
+                    "priceType": "CLOSE",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "open",
                     "label": "1本目始値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
-                    "priceType": "OPEN"
+                    "priceType": "OPEN",
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
-              }
+              },
+              "value": null,
+              "source": "INPUT"
             },
             {
               "feature": "init5RangePct",
@@ -679,24 +819,32 @@
                     "label": "5本最高値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1-5",
-                    "priceType": "HIGH"
+                    "priceType": "HIGH",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "low",
                     "label": "5本最安値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1-5",
-                    "priceType": "LOW"
+                    "priceType": "LOW",
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "open",
                     "label": "1本目始値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
-                    "priceType": "OPEN"
+                    "priceType": "OPEN",
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
-              }
+              },
+              "value": null,
+              "source": "INPUT"
             }
           ]
         },
@@ -713,52 +861,72 @@
           {
             "year": "2017",
             "status": "PASS",
-            "tradeCount": 7
+            "tradeCount": 7,
+            "profitFactor": 6.56,
+            "averagePnL": 99.28571428571429
           },
           {
             "year": "2018",
             "status": "PASS",
-            "tradeCount": 26
+            "tradeCount": 26,
+            "profitFactor": 3.3839285714285716,
+            "averagePnL": 154.03846153846155
           },
           {
             "year": "2019",
             "status": "PASS",
-            "tradeCount": 9
+            "tradeCount": 9,
+            "profitFactor": 26.11764705882353,
+            "averagePnL": 237.22222222222223
           },
           {
             "year": "2020",
             "status": "PASS",
-            "tradeCount": 23
+            "tradeCount": 23,
+            "profitFactor": 2.7085714285714286,
+            "averagePnL": 117
           },
           {
             "year": "2021",
             "status": "FAIL",
-            "tradeCount": 17
+            "tradeCount": 17,
+            "profitFactor": 0.5606060606060606,
+            "averagePnL": -68.23529411764706
           },
           {
             "year": "2022",
             "status": "PASS",
-            "tradeCount": 31
+            "tradeCount": 31,
+            "profitFactor": 3.6873385012919897,
+            "averagePnL": 167.74193548387098
           },
           {
             "year": "2023",
             "status": "PASS",
-            "tradeCount": 7
+            "tradeCount": 7,
+            "profitFactor": 1.3333333333333333,
+            "averagePnL": 15.714285714285714
           },
           {
             "year": "2024",
             "status": "PASS",
-            "tradeCount": 28
+            "tradeCount": 28,
+            "profitFactor": 7.280442804428044,
+            "averagePnL": 303.92857142857144
           },
           {
             "year": "2025",
             "status": "PASS",
-            "tradeCount": 24
+            "tradeCount": 24,
+            "profitFactor": 1.960618846694796,
+            "averagePnL": 142.29166666666666
           },
           {
             "year": "2026",
             "status": "PASS",
-            "tradeCount": 26
+            "tradeCount": 26,
+            "profitFactor": 3.5302734375,
+            "averagePnL": 498.2692307692308
           }
         ]
       }
