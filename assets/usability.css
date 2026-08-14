@@ -83,6 +83,8 @@ header small {
 .exitInputs label { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .exitInputs label > span { font-size: 13px; font-weight: 700; }
 .exitInputs input { width: 43%; padding: 9px; border: 1px solid #aeb8c8; border-radius: 8px; font-size: 16px; }
+.card .actions { flex-wrap: wrap; }
+.card .actions #save { flex-basis: 100%; }
 
 .confirmationSelector {
   margin: 10px 0 12px;
