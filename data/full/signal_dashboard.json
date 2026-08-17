@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-17T08:00:29.480Z",
+  "generatedAt": "2026-08-17T22:38:06.118Z",
   "inputContext": {
-    "activeSession": "EVENING",
+    "activeSession": "DAY",
     "sessions": {
       "DAY": {
-        "tradeDate": "2026-08-17",
-        "automatic": false
+        "tradeDate": "2026-08-18",
+        "automatic": true
       },
       "EVENING": {
         "tradeDate": null,
@@ -19,7 +19,7 @@
     "requestedStartDate": null,
     "requestedEndDate": null,
     "actualStartDate": "2017-01-04",
-    "actualEndDate": "2026-08-17"
+    "actualEndDate": "2026-08-18"
   },
   "signals": [
     {
@@ -30,7 +30,7 @@
       "rule": {
         "ruleId": "KDK-C0099",
         "directionRank": 1,
-        "conditionText": "init5Move >= 50 AND init3Pct >= 0.001271",
+        "conditionText": "init5Move >= 50 AND init3Pct >= 0.001270",
         "metrics": {
           "profitFactor": 2.9136509005217976,
           "winRate": 0.6876971608832808,
@@ -59,8 +59,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "5",
                     "priceType": "CLOSE",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 69420,
+                    "source": "AUTO"
                   },
                   {
                     "id": "open",
@@ -68,18 +68,18 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 69465,
+                    "source": "AUTO"
                   }
                 ]
               },
-              "value": null,
-              "source": "INPUT"
+              "value": -45,
+              "source": "AUTO"
             },
             {
               "feature": "init3Pct",
               "operator": ">=",
-              "threshold": 0.0012705651965707026,
+              "threshold": 0.001270362283925703,
               "description": "ザラ場開始から3本目までの価格変化率",
               "unit": "%",
               "availability": "AFTER_10M_3_BARS",
@@ -93,8 +93,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "3",
                     "priceType": "CLOSE",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 69515,
+                    "source": "AUTO"
                   },
                   {
                     "id": "open",
@@ -102,13 +102,13 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 69465,
+                    "source": "AUTO"
                   }
                 ]
               },
-              "value": null,
-              "source": "INPUT"
+              "value": 0.0007197869430648528,
+              "source": "AUTO"
             }
           ]
         },
@@ -128,8 +128,8 @@
               "timeframe": "DAY_10M",
               "targetBar": "6",
               "priceType": "OPEN",
-              "value": null,
-              "source": "INPUT",
+              "value": 69425,
+              "source": "AUTO",
               "calculator": null
             }
           ]
@@ -216,7 +216,7 @@
       "rule": {
         "ruleId": "KDK-C0156",
         "directionRank": 1,
-        "conditionText": "init5Pct <= -0.001440 AND bar1BodyRatio >= 0.666667",
+        "conditionText": "init5Pct <= -0.001439 AND bar1BodyRatio >= 0.666667",
         "metrics": {
           "profitFactor": 2.837708830548926,
           "winRate": 0.6027397260273972,
@@ -231,7 +231,7 @@
             {
               "feature": "init5Pct",
               "operator": "<=",
-              "threshold": -0.0014395413352039314,
+              "threshold": -0.0014388509077050326,
               "description": "ザラ場開始から5本目までの価格変化率",
               "unit": "%",
               "availability": "AFTER_10M_5_BARS",
@@ -245,8 +245,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "5",
                     "priceType": "CLOSE",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 69420,
+                    "source": "AUTO"
                   },
                   {
                     "id": "open",
@@ -254,13 +254,13 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 69465,
+                    "source": "AUTO"
                   }
                 ]
               },
-              "value": null,
-              "source": "INPUT"
+              "value": -0.0006478082487583676,
+              "source": "AUTO"
             },
             {
               "feature": "bar1BodyRatio",
@@ -279,8 +279,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 69465,
+                    "source": "AUTO"
                   },
                   {
                     "id": "high",
@@ -288,8 +288,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 69555,
+                    "source": "AUTO"
                   },
                   {
                     "id": "low",
@@ -297,8 +297,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 69430,
+                    "source": "AUTO"
                   },
                   {
                     "id": "close",
@@ -306,13 +306,13 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "CLOSE",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 69475,
+                    "source": "AUTO"
                   }
                 ]
               },
-              "value": null,
-              "source": "INPUT"
+              "value": 0.08,
+              "source": "AUTO"
             }
           ]
         },
@@ -330,20 +330,20 @@
               "id": "prevHigh",
               "label": "前日高値",
               "timeframe": "PREVIOUS_DAY",
-              "targetBar": "PREVIOUS",
+              "targetBar": "2026-08-17",
               "priceType": "HIGH",
-              "value": null,
-              "source": "INPUT",
+              "value": 69290,
+              "source": "AUTO",
               "calculator": null
             },
             {
               "id": "prevLow",
               "label": "前日安値",
               "timeframe": "PREVIOUS_DAY",
-              "targetBar": "PREVIOUS",
+              "targetBar": "2026-08-17",
               "priceType": "LOW",
-              "value": null,
-              "source": "INPUT",
+              "value": 68460,
+              "source": "AUTO",
               "calculator": null
             }
           ]
@@ -444,7 +444,7 @@
       "rule": {
         "ruleId": "KDK-E0079",
         "directionRank": 1,
-        "conditionText": "eveningInit3Pct >= 0.001080 AND eveningInit5RangePct >= 0.004546",
+        "conditionText": "eveningInit3Pct >= 0.001079 AND eveningInit5RangePct >= 0.004545",
         "metrics": {
           "profitFactor": 3.4890700815366915,
           "winRate": 0.6923076923076923,
@@ -459,7 +459,7 @@
             {
               "feature": "eveningInit3Pct",
               "operator": ">=",
-              "threshold": 0.0010799912904748729,
+              "threshold": 0.0010794995143286613,
               "description": "夕場開始から3本目までの価格変化率",
               "unit": "%",
               "availability": "AFTER_10M_3_BARS",
@@ -493,7 +493,7 @@
             {
               "feature": "eveningInit5RangePct",
               "operator": ">=",
-              "threshold": 0.004546259588709198,
+              "threshold": 0.004545008014795965,
               "description": "夕場開始から5本目までの値幅を始値で割った比率",
               "unit": "%",
               "availability": "AFTER_10M_5_BARS",
@@ -1091,7 +1091,7 @@
       "rule": {
         "ruleId": "KDK-X0010",
         "directionRank": 1,
-        "conditionText": "init3Pct <= -0.001204 AND init5RangePct >= 0.004845",
+        "conditionText": "init3Pct <= -0.001203 AND init5RangePct >= 0.004845",
         "metrics": {
           "profitFactor": 3.1251577503429355,
           "winRate": 0.6414141414141414,
@@ -1106,7 +1106,7 @@
             {
               "feature": "init3Pct",
               "operator": "<=",
-              "threshold": -0.0012041560915083901,
+              "threshold": -0.0012026427686191571,
               "description": "ザラ場開始から3本目までの価格変化率",
               "unit": "%",
               "availability": "AFTER_10M_3_BARS",
@@ -1140,7 +1140,7 @@
             {
               "feature": "init5RangePct",
               "operator": ">=",
-              "threshold": 0.004845456153401968,
+              "threshold": 0.004844714842347849,
               "description": "ザラ場開始から5本目までの値幅を始値で割った比率",
               "unit": "%",
               "availability": "AFTER_10M_5_BARS",
@@ -1296,7 +1296,7 @@
       "rule": {
         "ruleId": "KDK-E0079",
         "directionRank": 1,
-        "conditionText": "eveningInit3Pct >= 0.001080 AND eveningInit5RangePct >= 0.004546",
+        "conditionText": "eveningInit3Pct >= 0.001079 AND eveningInit5RangePct >= 0.004545",
         "metrics": {
           "profitFactor": 3.4890700815366915,
           "winRate": 0.6923076923076923,
@@ -1311,7 +1311,7 @@
             {
               "feature": "eveningInit3Pct",
               "operator": ">=",
-              "threshold": 0.0010799912904748729,
+              "threshold": 0.0010794995143286613,
               "description": "夕場開始から3本目までの価格変化率",
               "unit": "%",
               "availability": "AFTER_10M_3_BARS",
@@ -1345,7 +1345,7 @@
             {
               "feature": "eveningInit5RangePct",
               "operator": ">=",
-              "threshold": 0.004546259588709198,
+              "threshold": 0.004545008014795965,
               "description": "夕場開始から5本目までの値幅を始値で割った比率",
               "unit": "%",
               "availability": "AFTER_10M_5_BARS",
@@ -1935,9 +1935,9 @@
         ],
         "confirmationOptions": [
           {
-            "ruleId": "KDK-XA0011",
-            "rank": 11,
-            "conditionText": "init3Move >= 35",
+            "ruleId": "KDK-XA0175",
+            "rank": 19,
+            "conditionText": "init3Move >= 35 AND init3Range >= 120",
             "sampleGroup": "REFERENCE",
             "conditions": [
               {
@@ -1973,91 +1973,125 @@
                 },
                 "value": null,
                 "source": "INPUT"
+              },
+              {
+                "feature": "init3Range",
+                "operator": ">=",
+                "threshold": 120,
+                "description": "ザラ場開始から3本目までの高値と安値の差",
+                "unit": "円",
+                "availability": "AFTER_10M_3_BARS",
+                "formula": "H1-3 - L1-3",
+                "calculator": {
+                  "kind": "RANGE",
+                  "inputs": [
+                    {
+                      "id": "high",
+                      "label": "3本最高値",
+                      "timeframe": "DAY_10M",
+                      "targetBar": "1-3",
+                      "priceType": "HIGH",
+                      "value": null,
+                      "source": "INPUT"
+                    },
+                    {
+                      "id": "low",
+                      "label": "3本最安値",
+                      "timeframe": "DAY_10M",
+                      "targetBar": "1-3",
+                      "priceType": "LOW",
+                      "value": null,
+                      "source": "INPUT"
+                    }
+                  ]
+                },
+                "value": null,
+                "source": "INPUT"
               }
             ],
             "metrics": {
-              "profitFactor": 1.775287042099508,
-              "winRate": 0.5409836065573771,
-              "averagePnL": 116.22950819672131,
-              "tradeCount": 61
+              "profitFactor": 1.8332292317301686,
+              "winRate": 0.475,
+              "averagePnL": 166.75,
+              "tradeCount": 40
             },
             "baselineMetrics": {
-              "profitFactor": 1.3168964711381164,
-              "winRate": 0.5862068965517241,
-              "averagePnL": 38.96551724137931,
-              "tradeCount": 174
+              "profitFactor": 1.4712615078377707,
+              "winRate": 0.5828571428571429,
+              "averagePnL": 54.114285714285714,
+              "tradeCount": 175
             },
             "differences": {
-              "profitFactor": 0.4583905709613916,
-              "winRate": -0.045223289994346993,
-              "averagePnL": 77.263990955342,
-              "tradeCount": -113
+              "profitFactor": 0.36196772389239795,
+              "winRate": -0.10785714285714287,
+              "averagePnL": 112.63571428571429,
+              "tradeCount": -135
             },
-            "confirmationRate": 0.3505747126436782,
+            "confirmationRate": 0.22857142857142856,
             "yearlyValidation": [
               {
                 "year": "2018",
-                "status": "FAIL",
-                "tradeCount": 3,
-                "profitFactor": 0.358974358974359,
-                "winRate": 0.3333333333333333,
-                "averagePnL": -41.666666666666664
+                "status": "PASS",
+                "tradeCount": 2,
+                "profitFactor": 1.1666666666666667,
+                "winRate": 0.5,
+                "averagePnL": 5
               },
               {
                 "year": "2020",
-                "status": "PASS",
-                "tradeCount": 9,
-                "profitFactor": 1.0817307692307692,
-                "winRate": 0.4444444444444444,
-                "averagePnL": 9.444444444444445
+                "status": "FAIL",
+                "tradeCount": 5,
+                "profitFactor": 0.03389830508474576,
+                "winRate": 0.2,
+                "averagePnL": -171
               },
               {
                 "year": "2021",
-                "status": "FAIL",
-                "tradeCount": 2,
-                "profitFactor": 0.38235294117647056,
-                "winRate": 0.5,
-                "averagePnL": -52.5
+                "status": "NO_TRADE",
+                "tradeCount": 0,
+                "profitFactor": null,
+                "winRate": 0,
+                "averagePnL": 0
               },
               {
                 "year": "2022",
                 "status": "FAIL",
-                "tradeCount": 8,
-                "profitFactor": 0.9722222222222222,
+                "tradeCount": 4,
+                "profitFactor": 0.20454545454545456,
                 "winRate": 0.5,
-                "averagePnL": -2.5
+                "averagePnL": -87.5
               },
               {
                 "year": "2023",
-                "status": "PASS",
-                "tradeCount": 4,
-                "profitFactor": 3.096774193548387,
-                "winRate": 0.5,
-                "averagePnL": 81.25
+                "status": "NO_TRADE",
+                "tradeCount": 0,
+                "profitFactor": null,
+                "winRate": 0,
+                "averagePnL": 0
               },
               {
                 "year": "2024",
-                "status": "PASS",
-                "tradeCount": 10,
-                "profitFactor": 1.2545931758530184,
-                "winRate": 0.8,
-                "averagePnL": 48.5
+                "status": "FAIL",
+                "tradeCount": 6,
+                "profitFactor": 0.8758389261744967,
+                "winRate": 0.6666666666666666,
+                "averagePnL": -30.833333333333332
               },
               {
                 "year": "2025",
                 "status": "FAIL",
-                "tradeCount": 8,
-                "profitFactor": 0.020460358056265986,
-                "winRate": 0.25,
-                "averagePnL": -478.75
+                "tradeCount": 7,
+                "profitFactor": 0.01918158567774936,
+                "winRate": 0.14285714285714285,
+                "averagePnL": -547.8571428571429
               },
               {
                 "year": "2026",
                 "status": "PASS",
-                "tradeCount": 17,
-                "profitFactor": 10.785714285714286,
-                "winRate": 0.6470588235294118,
-                "averagePnL": 604.4117647058823
+                "tradeCount": 16,
+                "profitFactor": 10.741803278688524,
+                "winRate": 0.625,
+                "averagePnL": 742.8125
               }
             ]
           }
