@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16T22:35:36.094Z",
+  "generatedAt": "2026-08-17T08:00:29.480Z",
   "inputContext": {
-    "activeSession": "DAY",
+    "activeSession": "EVENING",
     "sessions": {
       "DAY": {
         "tradeDate": "2026-08-17",
-        "automatic": true
+        "automatic": false
       },
       "EVENING": {
         "tradeDate": null,
@@ -59,8 +59,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "5",
                     "priceType": "CLOSE",
-                    "value": 68475,
-                    "source": "AUTO"
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "open",
@@ -68,13 +68,13 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": 68710,
-                    "source": "AUTO"
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
               },
-              "value": -235,
-              "source": "AUTO"
+              "value": null,
+              "source": "INPUT"
             },
             {
               "feature": "init3Pct",
@@ -93,8 +93,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "3",
                     "priceType": "CLOSE",
-                    "value": 68605,
-                    "source": "AUTO"
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "open",
@@ -102,13 +102,13 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": 68710,
-                    "source": "AUTO"
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
               },
-              "value": -0.0015281618396157765,
-              "source": "AUTO"
+              "value": null,
+              "source": "INPUT"
             }
           ]
         },
@@ -128,8 +128,8 @@
               "timeframe": "DAY_10M",
               "targetBar": "6",
               "priceType": "OPEN",
-              "value": 68475,
-              "source": "AUTO",
+              "value": null,
+              "source": "INPUT",
               "calculator": null
             }
           ]
@@ -245,8 +245,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "5",
                     "priceType": "CLOSE",
-                    "value": 68475,
-                    "source": "AUTO"
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "open",
@@ -254,13 +254,13 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": 68710,
-                    "source": "AUTO"
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
               },
-              "value": -0.0034201717362829284,
-              "source": "AUTO"
+              "value": null,
+              "source": "INPUT"
             },
             {
               "feature": "bar1BodyRatio",
@@ -279,8 +279,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": 68710,
-                    "source": "AUTO"
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "high",
@@ -288,8 +288,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "HIGH",
-                    "value": 68775,
-                    "source": "AUTO"
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "low",
@@ -297,8 +297,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "LOW",
-                    "value": 68680,
-                    "source": "AUTO"
+                    "value": null,
+                    "source": "INPUT"
                   },
                   {
                     "id": "close",
@@ -306,13 +306,13 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "CLOSE",
-                    "value": 68690,
-                    "source": "AUTO"
+                    "value": null,
+                    "source": "INPUT"
                   }
                 ]
               },
-              "value": 0.21052631578947367,
-              "source": "AUTO"
+              "value": null,
+              "source": "INPUT"
             }
           ]
         },
@@ -330,20 +330,20 @@
               "id": "prevHigh",
               "label": "前日高値",
               "timeframe": "PREVIOUS_DAY",
-              "targetBar": "2026-08-14",
+              "targetBar": "PREVIOUS",
               "priceType": "HIGH",
-              "value": 69650,
-              "source": "AUTO",
+              "value": null,
+              "source": "INPUT",
               "calculator": null
             },
             {
               "id": "prevLow",
               "label": "前日安値",
               "timeframe": "PREVIOUS_DAY",
-              "targetBar": "2026-08-14",
+              "targetBar": "PREVIOUS",
               "priceType": "LOW",
-              "value": 68145,
-              "source": "AUTO",
+              "value": null,
+              "source": "INPUT",
               "calculator": null
             }
           ]
@@ -1935,9 +1935,9 @@
         ],
         "confirmationOptions": [
           {
-            "ruleId": "KDK-XA0175",
-            "rank": 19,
-            "conditionText": "init3Move >= 35 AND init3Range >= 120",
+            "ruleId": "KDK-XA0011",
+            "rank": 11,
+            "conditionText": "init3Move >= 35",
             "sampleGroup": "REFERENCE",
             "conditions": [
               {
@@ -1973,125 +1973,91 @@
                 },
                 "value": null,
                 "source": "INPUT"
-              },
-              {
-                "feature": "init3Range",
-                "operator": ">=",
-                "threshold": 120,
-                "description": "ザラ場開始から3本目までの高値と安値の差",
-                "unit": "円",
-                "availability": "AFTER_10M_3_BARS",
-                "formula": "H1-3 - L1-3",
-                "calculator": {
-                  "kind": "RANGE",
-                  "inputs": [
-                    {
-                      "id": "high",
-                      "label": "3本最高値",
-                      "timeframe": "DAY_10M",
-                      "targetBar": "1-3",
-                      "priceType": "HIGH",
-                      "value": null,
-                      "source": "INPUT"
-                    },
-                    {
-                      "id": "low",
-                      "label": "3本最安値",
-                      "timeframe": "DAY_10M",
-                      "targetBar": "1-3",
-                      "priceType": "LOW",
-                      "value": null,
-                      "source": "INPUT"
-                    }
-                  ]
-                },
-                "value": null,
-                "source": "INPUT"
               }
             ],
             "metrics": {
-              "profitFactor": 2.0260492040520983,
-              "winRate": 0.5,
-              "averagePnL": 168.8095238095238,
-              "tradeCount": 42
+              "profitFactor": 1.775287042099508,
+              "winRate": 0.5409836065573771,
+              "averagePnL": 116.22950819672131,
+              "tradeCount": 61
             },
             "baselineMetrics": {
-              "profitFactor": 1.3306828811973808,
-              "winRate": 0.5536723163841808,
-              "averagePnL": 39.943502824858754,
-              "tradeCount": 177
+              "profitFactor": 1.3168964711381164,
+              "winRate": 0.5862068965517241,
+              "averagePnL": 38.96551724137931,
+              "tradeCount": 174
             },
             "differences": {
-              "profitFactor": 0.6953663228547176,
-              "winRate": -0.053672316384180796,
-              "averagePnL": 128.86602098466506,
-              "tradeCount": -135
+              "profitFactor": 0.4583905709613916,
+              "winRate": -0.045223289994346993,
+              "averagePnL": 77.263990955342,
+              "tradeCount": -113
             },
-            "confirmationRate": 0.23728813559322035,
+            "confirmationRate": 0.3505747126436782,
             "yearlyValidation": [
               {
                 "year": "2018",
                 "status": "FAIL",
-                "tradeCount": 2,
-                "profitFactor": 0.25925925925925924,
-                "winRate": 0.5,
-                "averagePnL": -100
+                "tradeCount": 3,
+                "profitFactor": 0.358974358974359,
+                "winRate": 0.3333333333333333,
+                "averagePnL": -41.666666666666664
               },
               {
                 "year": "2020",
-                "status": "FAIL",
-                "tradeCount": 5,
-                "profitFactor": 0.03389830508474576,
-                "winRate": 0.2,
-                "averagePnL": -171
+                "status": "PASS",
+                "tradeCount": 9,
+                "profitFactor": 1.0817307692307692,
+                "winRate": 0.4444444444444444,
+                "averagePnL": 9.444444444444445
               },
               {
                 "year": "2021",
-                "status": "NO_TRADE",
-                "tradeCount": 0,
-                "profitFactor": null,
-                "winRate": 0,
-                "averagePnL": 0
+                "status": "FAIL",
+                "tradeCount": 2,
+                "profitFactor": 0.38235294117647056,
+                "winRate": 0.5,
+                "averagePnL": -52.5
               },
               {
                 "year": "2022",
                 "status": "FAIL",
-                "tradeCount": 4,
-                "profitFactor": 0.20454545454545456,
+                "tradeCount": 8,
+                "profitFactor": 0.9722222222222222,
                 "winRate": 0.5,
-                "averagePnL": -87.5
+                "averagePnL": -2.5
               },
               {
                 "year": "2023",
                 "status": "PASS",
-                "tradeCount": 1,
-                "profitFactor": null,
-                "winRate": 1,
-                "averagePnL": 335
+                "tradeCount": 4,
+                "profitFactor": 3.096774193548387,
+                "winRate": 0.5,
+                "averagePnL": 81.25
               },
               {
                 "year": "2024",
-                "status": "FAIL",
-                "tradeCount": 6,
-                "profitFactor": 0.8624161073825504,
-                "winRate": 0.6666666666666666,
-                "averagePnL": -34.166666666666664
+                "status": "PASS",
+                "tradeCount": 10,
+                "profitFactor": 1.2545931758530184,
+                "winRate": 0.8,
+                "averagePnL": 48.5
               },
               {
                 "year": "2025",
                 "status": "FAIL",
-                "tradeCount": 7,
-                "profitFactor": 0.0876068376068376,
-                "winRate": 0.2857142857142857,
-                "averagePnL": -305
+                "tradeCount": 8,
+                "profitFactor": 0.020460358056265986,
+                "winRate": 0.25,
+                "averagePnL": -478.75
               },
               {
                 "year": "2026",
                 "status": "PASS",
                 "tradeCount": 17,
-                "profitFactor": 8.070707070707071,
-                "winRate": 0.5882352941176471,
-                "averagePnL": 617.6470588235294
+                "profitFactor": 10.785714285714286,
+                "winRate": 0.6470588235294118,
+                "averagePnL": 604.4117647058823
               }
             ]
           }
