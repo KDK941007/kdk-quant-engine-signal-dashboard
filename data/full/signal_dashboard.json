@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-18T07:39:01.311Z",
+  "generatedAt": "2026-08-18T22:38:25.459Z",
   "inputContext": {
-    "activeSession": "EVENING",
+    "activeSession": "DAY",
     "sessions": {
       "DAY": {
-        "tradeDate": "2026-08-18",
-        "automatic": false
+        "tradeDate": "2026-08-19",
+        "automatic": true
       },
       "EVENING": {
         "tradeDate": null,
@@ -19,7 +19,7 @@
     "requestedStartDate": null,
     "requestedEndDate": null,
     "actualStartDate": "2017-01-04",
-    "actualEndDate": "2026-08-18"
+    "actualEndDate": "2026-08-19"
   },
   "signals": [
     {
@@ -59,8 +59,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "5",
                     "priceType": "CLOSE",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 66330,
+                    "source": "AUTO"
                   },
                   {
                     "id": "open",
@@ -68,18 +68,18 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 66415,
+                    "source": "AUTO"
                   }
                 ]
               },
-              "value": null,
-              "source": "INPUT"
+              "value": -85,
+              "source": "AUTO"
             },
             {
               "feature": "init3Pct",
               "operator": ">=",
-              "threshold": 0.001270362283925703,
+              "threshold": 0.0012701593712807035,
               "description": "ザラ場開始から3本目までの価格変化率",
               "unit": "%",
               "availability": "AFTER_10M_3_BARS",
@@ -93,8 +93,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "3",
                     "priceType": "CLOSE",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 66240,
+                    "source": "AUTO"
                   },
                   {
                     "id": "open",
@@ -102,13 +102,13 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 66415,
+                    "source": "AUTO"
                   }
                 ]
               },
-              "value": null,
-              "source": "INPUT"
+              "value": -0.002634946924640518,
+              "source": "AUTO"
             }
           ]
         },
@@ -128,8 +128,8 @@
               "timeframe": "DAY_10M",
               "targetBar": "6",
               "priceType": "OPEN",
-              "value": null,
-              "source": "INPUT",
+              "value": 66330,
+              "source": "AUTO",
               "calculator": null
             }
           ]
@@ -214,14 +214,14 @@
       "direction": "SHORT",
       "status": "READY",
       "rule": {
-        "ruleId": "KDK-C0156",
+        "ruleId": "KDK-C0152",
         "directionRank": 1,
-        "conditionText": "init5Pct <= -0.001439 AND bar1BodyRatio >= 0.666667",
+        "conditionText": "init5Pct <= -0.001438 AND bar1BodyRatio >= 0.671667",
         "metrics": {
-          "profitFactor": 2.837708830548926,
-          "winRate": 0.6027397260273972,
-          "averagePnL": 131.84931506849315,
-          "tradeCount": 146
+          "profitFactor": 2.8246311010215663,
+          "winRate": 0.5882352941176471,
+          "averagePnL": 135.08403361344537,
+          "tradeCount": 119
         },
         "entry": {
           "judgmentTime": "09:30（5本目確定後）",
@@ -231,7 +231,7 @@
             {
               "feature": "init5Pct",
               "operator": "<=",
-              "threshold": -0.0014388509077050326,
+              "threshold": -0.001438160480206134,
               "description": "ザラ場開始から5本目までの価格変化率",
               "unit": "%",
               "availability": "AFTER_10M_5_BARS",
@@ -245,8 +245,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "5",
                     "priceType": "CLOSE",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 66330,
+                    "source": "AUTO"
                   },
                   {
                     "id": "open",
@@ -254,18 +254,18 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 66415,
+                    "source": "AUTO"
                   }
                 ]
               },
-              "value": null,
-              "source": "INPUT"
+              "value": -0.001279831363396823,
+              "source": "AUTO"
             },
             {
               "feature": "bar1BodyRatio",
               "operator": ">=",
-              "threshold": 0.6666666666666666,
+              "threshold": 0.6716666666666679,
               "description": "ザラ場1本目のローソク足実体を値幅で割った比率",
               "unit": "%",
               "availability": "AFTER_10M_1_BAR",
@@ -279,8 +279,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 66415,
+                    "source": "AUTO"
                   },
                   {
                     "id": "high",
@@ -288,8 +288,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 66450,
+                    "source": "AUTO"
                   },
                   {
                     "id": "low",
@@ -297,8 +297,8 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 66315,
+                    "source": "AUTO"
                   },
                   {
                     "id": "close",
@@ -306,45 +306,271 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "CLOSE",
-                    "value": null,
-                    "source": "INPUT"
+                    "value": 66320,
+                    "source": "AUTO"
                   }
                 ]
               },
-              "value": null,
-              "source": "INPUT"
+              "value": 0.7037037037037037,
+              "source": "AUTO"
             }
           ]
         },
         "exit": {
-          "scenarioName": "prev_day_high_low",
-          "strategy": "PREV_DAY_HIGH_LOW",
-          "description": "前営業日の高値と安値を利確価格・損切価格に使用します。",
+          "scenarioName": "recent_high_low_12",
+          "strategy": "RECENT_HIGH_LOW",
+          "description": "Entry前の指定本数から最高値と最安値を使用します。",
           "takeProfit": 0,
           "stopLoss": 0,
           "takeProfitAtrMultiplier": null,
           "stopLossAtrMultiplier": null,
-          "recentLookbackBars": null,
+          "recentLookbackBars": 12,
           "inputs": [
             {
-              "id": "prevHigh",
-              "label": "前日高値",
-              "timeframe": "PREVIOUS_DAY",
-              "targetBar": "PREVIOUS",
+              "id": "recentHigh",
+              "label": "Entry前12本の最高値",
+              "timeframe": "10M",
+              "targetBar": "PRE_ENTRY_12",
               "priceType": "HIGH",
-              "value": null,
-              "source": "INPUT",
-              "calculator": null
+              "value": 69120,
+              "source": "AUTO",
+              "calculator": {
+                "kind": "MAX",
+                "formula": "Entry前12本の高値の最大値",
+                "inputs": [
+                  {
+                    "id": "high1",
+                    "label": "8:50 高値",
+                    "timeframe": "10M",
+                    "targetBar": "8:50",
+                    "priceType": "HIGH",
+                    "value": 69005,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "high2",
+                    "label": "9:00 高値",
+                    "timeframe": "10M",
+                    "targetBar": "9:00",
+                    "priceType": "HIGH",
+                    "value": 69015,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "high3",
+                    "label": "9:10 高値",
+                    "timeframe": "10M",
+                    "targetBar": "9:10",
+                    "priceType": "HIGH",
+                    "value": 68895,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "high4",
+                    "label": "9:20 高値",
+                    "timeframe": "10M",
+                    "targetBar": "9:20",
+                    "priceType": "HIGH",
+                    "value": 69055,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "high5",
+                    "label": "9:30 高値",
+                    "timeframe": "10M",
+                    "targetBar": "9:30",
+                    "priceType": "HIGH",
+                    "value": 69110,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "high6",
+                    "label": "9:40 高値",
+                    "timeframe": "10M",
+                    "targetBar": "9:40",
+                    "priceType": "HIGH",
+                    "value": 69120,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "high7",
+                    "label": "9:50 高値",
+                    "timeframe": "10M",
+                    "targetBar": "9:50",
+                    "priceType": "HIGH",
+                    "value": 69040,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "high8",
+                    "label": "0:00 高値",
+                    "timeframe": "10M",
+                    "targetBar": "0:00",
+                    "priceType": "HIGH",
+                    "value": 66450,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "high9",
+                    "label": "0:10 高値",
+                    "timeframe": "10M",
+                    "targetBar": "0:10",
+                    "priceType": "HIGH",
+                    "value": 66330,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "high10",
+                    "label": "0:20 高値",
+                    "timeframe": "10M",
+                    "targetBar": "0:20",
+                    "priceType": "HIGH",
+                    "value": 66280,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "high11",
+                    "label": "0:30 高値",
+                    "timeframe": "10M",
+                    "targetBar": "0:30",
+                    "priceType": "HIGH",
+                    "value": 66285,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "high12",
+                    "label": "0:40 高値",
+                    "timeframe": "10M",
+                    "targetBar": "0:40",
+                    "priceType": "HIGH",
+                    "value": 66365,
+                    "source": "AUTO"
+                  }
+                ]
+              }
             },
             {
-              "id": "prevLow",
-              "label": "前日安値",
-              "timeframe": "PREVIOUS_DAY",
-              "targetBar": "PREVIOUS",
+              "id": "recentLow",
+              "label": "Entry前12本の最安値",
+              "timeframe": "10M",
+              "targetBar": "PRE_ENTRY_12",
               "priceType": "LOW",
-              "value": null,
-              "source": "INPUT",
-              "calculator": null
+              "value": 66115,
+              "source": "AUTO",
+              "calculator": {
+                "kind": "MIN",
+                "formula": "Entry前12本の安値の最小値",
+                "inputs": [
+                  {
+                    "id": "low1",
+                    "label": "8:50 安値",
+                    "timeframe": "10M",
+                    "targetBar": "8:50",
+                    "priceType": "LOW",
+                    "value": 68865,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "low2",
+                    "label": "9:00 安値",
+                    "timeframe": "10M",
+                    "targetBar": "9:00",
+                    "priceType": "LOW",
+                    "value": 68595,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "low3",
+                    "label": "9:10 安値",
+                    "timeframe": "10M",
+                    "targetBar": "9:10",
+                    "priceType": "LOW",
+                    "value": 68685,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "low4",
+                    "label": "9:20 安値",
+                    "timeframe": "10M",
+                    "targetBar": "9:20",
+                    "priceType": "LOW",
+                    "value": 68860,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "low5",
+                    "label": "9:30 安値",
+                    "timeframe": "10M",
+                    "targetBar": "9:30",
+                    "priceType": "LOW",
+                    "value": 68945,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "low6",
+                    "label": "9:40 安値",
+                    "timeframe": "10M",
+                    "targetBar": "9:40",
+                    "priceType": "LOW",
+                    "value": 68965,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "low7",
+                    "label": "9:50 安値",
+                    "timeframe": "10M",
+                    "targetBar": "9:50",
+                    "priceType": "LOW",
+                    "value": 68915,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "low8",
+                    "label": "0:00 安値",
+                    "timeframe": "10M",
+                    "targetBar": "0:00",
+                    "priceType": "LOW",
+                    "value": 66315,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "low9",
+                    "label": "0:10 安値",
+                    "timeframe": "10M",
+                    "targetBar": "0:10",
+                    "priceType": "LOW",
+                    "value": 66200,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "low10",
+                    "label": "0:20 安値",
+                    "timeframe": "10M",
+                    "targetBar": "0:20",
+                    "priceType": "LOW",
+                    "value": 66185,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "low11",
+                    "label": "0:30 安値",
+                    "timeframe": "10M",
+                    "targetBar": "0:30",
+                    "priceType": "LOW",
+                    "value": 66115,
+                    "source": "AUTO"
+                  },
+                  {
+                    "id": "low12",
+                    "label": "0:40 安値",
+                    "timeframe": "10M",
+                    "targetBar": "0:40",
+                    "priceType": "LOW",
+                    "value": 66115,
+                    "source": "AUTO"
+                  }
+                ]
+              }
             }
           ]
         },
@@ -352,72 +578,72 @@
           {
             "year": "2017",
             "status": "PASS",
-            "tradeCount": 13,
-            "profitFactor": 5.409090909090909,
-            "averagePnL": 74.61538461538461
+            "tradeCount": 7,
+            "profitFactor": 4.925,
+            "averagePnL": 112.14285714285714
           },
           {
             "year": "2018",
             "status": "PASS",
-            "tradeCount": 10,
-            "profitFactor": 12.916666666666666,
-            "averagePnL": 214.5
+            "tradeCount": 9,
+            "profitFactor": 10.222222222222221,
+            "averagePnL": 184.44444444444446
           },
           {
             "year": "2019",
             "status": "PASS",
-            "tradeCount": 12,
-            "profitFactor": 4.901960784313726,
-            "averagePnL": 82.91666666666667
+            "tradeCount": 8,
+            "profitFactor": 8.384615384615385,
+            "averagePnL": 120
           },
           {
             "year": "2020",
             "status": "PASS",
-            "tradeCount": 17,
-            "profitFactor": 3.669230769230769,
-            "averagePnL": 102.05882352941177
+            "tradeCount": 15,
+            "profitFactor": 3.4076923076923076,
+            "averagePnL": 104.33333333333333
           },
           {
             "year": "2021",
-            "status": "PASS",
-            "tradeCount": 14,
-            "profitFactor": 1.9768518518518519,
-            "averagePnL": 75.35714285714286
+            "status": "FAIL",
+            "tradeCount": 11,
+            "profitFactor": 0.8101851851851852,
+            "averagePnL": -18.636363636363637
           },
           {
             "year": "2022",
             "status": "PASS",
-            "tradeCount": 21,
-            "profitFactor": 2.9813084112149535,
-            "averagePnL": 100.95238095238095
+            "tradeCount": 19,
+            "profitFactor": 2.0093457943925235,
+            "averagePnL": 56.8421052631579
           },
           {
             "year": "2023",
-            "status": "FAIL",
-            "tradeCount": 12,
-            "profitFactor": 0.9540229885057471,
-            "averagePnL": -3.3333333333333335
+            "status": "PASS",
+            "tradeCount": 9,
+            "profitFactor": 1.8444444444444446,
+            "averagePnL": 42.22222222222222
           },
           {
             "year": "2024",
             "status": "PASS",
-            "tradeCount": 14,
-            "profitFactor": 2.257234726688103,
-            "averagePnL": 139.64285714285714
+            "tradeCount": 10,
+            "profitFactor": 1.7572463768115942,
+            "averagePnL": 104.5
           },
           {
             "year": "2025",
             "status": "PASS",
-            "tradeCount": 18,
-            "profitFactor": 5.1902654867256635,
-            "averagePnL": 263.05555555555554
+            "tradeCount": 17,
+            "profitFactor": 4.8053097345132745,
+            "averagePnL": 252.94117647058823
           },
           {
             "year": "2026",
             "status": "PASS",
-            "tradeCount": 15,
-            "profitFactor": 2.033189033189033,
-            "averagePnL": 238.66666666666666
+            "tradeCount": 14,
+            "profitFactor": 2.7736220472440944,
+            "averagePnL": 321.7857142857143
           }
         ]
       }
@@ -444,7 +670,7 @@
       "rule": {
         "ruleId": "KDK-E0079",
         "directionRank": 1,
-        "conditionText": "eveningInit3Pct >= 0.001079 AND eveningInit5RangePct >= 0.004545",
+        "conditionText": "eveningInit3Pct >= 0.001079 AND eveningInit5RangePct >= 0.004544",
         "metrics": {
           "profitFactor": 3.4890700815366915,
           "winRate": 0.6923076923076923,
@@ -459,7 +685,7 @@
             {
               "feature": "eveningInit3Pct",
               "operator": ">=",
-              "threshold": 0.0010794995143286613,
+              "threshold": 0.0010790077381824497,
               "description": "夕場開始から3本目までの価格変化率",
               "unit": "%",
               "availability": "AFTER_10M_3_BARS",
@@ -493,7 +719,7 @@
             {
               "feature": "eveningInit5RangePct",
               "operator": ">=",
-              "threshold": 0.004545008014795965,
+              "threshold": 0.0045437564408827335,
               "description": "夕場開始から5本目までの値幅を始値で割った比率",
               "unit": "%",
               "availability": "AFTER_10M_5_BARS",
@@ -536,137 +762,29 @@
           ]
         },
         "exit": {
-          "scenarioName": "recent_high_low_24",
+          "scenarioName": "recent_high_low_12",
           "strategy": "RECENT_HIGH_LOW",
           "description": "Entry前の指定本数から最高値と最安値を使用します。",
           "takeProfit": 0,
           "stopLoss": 0,
           "takeProfitAtrMultiplier": null,
           "stopLossAtrMultiplier": null,
-          "recentLookbackBars": 24,
+          "recentLookbackBars": 12,
           "inputs": [
             {
               "id": "recentHigh",
-              "label": "Entry前24本の最高値",
+              "label": "Entry前12本の最高値",
               "timeframe": "10M",
-              "targetBar": "PRE_ENTRY_24",
+              "targetBar": "PRE_ENTRY_12",
               "priceType": "HIGH",
               "value": null,
               "source": "INPUT",
               "calculator": {
                 "kind": "MAX",
-                "formula": "Entry前24本の高値の最大値",
+                "formula": "Entry前12本の高値の最大値",
                 "inputs": [
                   {
                     "id": "high1",
-                    "label": "Entry前24本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_24",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high2",
-                    "label": "Entry前23本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_23",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high3",
-                    "label": "Entry前22本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_22",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high4",
-                    "label": "Entry前21本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_21",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high5",
-                    "label": "Entry前20本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_20",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high6",
-                    "label": "Entry前19本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_19",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high7",
-                    "label": "Entry前18本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_18",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high8",
-                    "label": "Entry前17本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_17",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high9",
-                    "label": "Entry前16本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_16",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high10",
-                    "label": "Entry前15本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_15",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high11",
-                    "label": "Entry前14本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_14",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high12",
-                    "label": "Entry前13本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_13",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high13",
                     "label": "Entry前12本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_12",
@@ -675,7 +793,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high14",
+                    "id": "high2",
                     "label": "Entry前11本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_11",
@@ -684,7 +802,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high15",
+                    "id": "high3",
                     "label": "Entry前10本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_10",
@@ -693,7 +811,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high16",
+                    "id": "high4",
                     "label": "Entry前9本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_9",
@@ -702,7 +820,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high17",
+                    "id": "high5",
                     "label": "Entry前8本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_8",
@@ -711,7 +829,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high18",
+                    "id": "high6",
                     "label": "Entry前7本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_7",
@@ -720,7 +838,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high19",
+                    "id": "high7",
                     "label": "Entry前6本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_6",
@@ -729,7 +847,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high20",
+                    "id": "high8",
                     "label": "Entry前5本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_5",
@@ -738,7 +856,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high21",
+                    "id": "high9",
                     "label": "Entry前4本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_4",
@@ -747,7 +865,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high22",
+                    "id": "high10",
                     "label": "Entry前3本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_3",
@@ -756,7 +874,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high23",
+                    "id": "high11",
                     "label": "Entry前2本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_2",
@@ -765,7 +883,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high24",
+                    "id": "high12",
                     "label": "Entry前1本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_1",
@@ -778,126 +896,18 @@
             },
             {
               "id": "recentLow",
-              "label": "Entry前24本の最安値",
+              "label": "Entry前12本の最安値",
               "timeframe": "10M",
-              "targetBar": "PRE_ENTRY_24",
+              "targetBar": "PRE_ENTRY_12",
               "priceType": "LOW",
               "value": null,
               "source": "INPUT",
               "calculator": {
                 "kind": "MIN",
-                "formula": "Entry前24本の安値の最小値",
+                "formula": "Entry前12本の安値の最小値",
                 "inputs": [
                   {
                     "id": "low1",
-                    "label": "Entry前24本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_24",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low2",
-                    "label": "Entry前23本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_23",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low3",
-                    "label": "Entry前22本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_22",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low4",
-                    "label": "Entry前21本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_21",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low5",
-                    "label": "Entry前20本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_20",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low6",
-                    "label": "Entry前19本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_19",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low7",
-                    "label": "Entry前18本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_18",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low8",
-                    "label": "Entry前17本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_17",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low9",
-                    "label": "Entry前16本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_16",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low10",
-                    "label": "Entry前15本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_15",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low11",
-                    "label": "Entry前14本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_14",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low12",
-                    "label": "Entry前13本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_13",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low13",
                     "label": "Entry前12本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_12",
@@ -906,7 +916,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low14",
+                    "id": "low2",
                     "label": "Entry前11本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_11",
@@ -915,7 +925,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low15",
+                    "id": "low3",
                     "label": "Entry前10本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_10",
@@ -924,7 +934,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low16",
+                    "id": "low4",
                     "label": "Entry前9本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_9",
@@ -933,7 +943,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low17",
+                    "id": "low5",
                     "label": "Entry前8本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_8",
@@ -942,7 +952,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low18",
+                    "id": "low6",
                     "label": "Entry前7本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_7",
@@ -951,7 +961,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low19",
+                    "id": "low7",
                     "label": "Entry前6本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_6",
@@ -960,7 +970,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low20",
+                    "id": "low8",
                     "label": "Entry前5本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_5",
@@ -969,7 +979,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low21",
+                    "id": "low9",
                     "label": "Entry前4本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_4",
@@ -978,7 +988,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low22",
+                    "id": "low10",
                     "label": "Entry前3本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_3",
@@ -987,7 +997,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low23",
+                    "id": "low11",
                     "label": "Entry前2本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_2",
@@ -996,7 +1006,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low24",
+                    "id": "low12",
                     "label": "Entry前1本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_1",
@@ -1089,14 +1099,14 @@
       "direction": "SHORT",
       "status": "READY",
       "rule": {
-        "ruleId": "KDK-X0010",
+        "ruleId": "KDK-X0009",
         "directionRank": 1,
-        "conditionText": "init3Pct <= -0.001203 AND init5RangePct >= 0.004845",
+        "conditionText": "init3Pct <= -0.001208 AND init5RangePct >= 0.004847",
         "metrics": {
-          "profitFactor": 3.1251577503429355,
-          "winRate": 0.6414141414141414,
-          "averagePnL": 195.61111111111111,
-          "tradeCount": 198
+          "profitFactor": 3.2011522633744858,
+          "winRate": 0.6432160804020101,
+          "averagePnL": 201.58793969849245,
+          "tradeCount": 199
         },
         "entry": {
           "judgmentTime": "夕場5本目確定後",
@@ -1106,7 +1116,7 @@
             {
               "feature": "init3Pct",
               "operator": "<=",
-              "threshold": -0.0012026427686191571,
+              "threshold": -0.0012075110734801353,
               "description": "ザラ場開始から3本目までの価格変化率",
               "unit": "%",
               "availability": "AFTER_10M_3_BARS",
@@ -1140,7 +1150,7 @@
             {
               "feature": "init5RangePct",
               "operator": ">=",
-              "threshold": 0.004844714842347849,
+              "threshold": 0.004847303964301029,
               "description": "ザラ場開始から5本目までの値幅を始値で割った比率",
               "unit": "%",
               "availability": "AFTER_10M_5_BARS",
@@ -1281,9 +1291,9 @@
           {
             "year": "2026",
             "status": "PASS",
-            "tradeCount": 26,
-            "profitFactor": 3.65520728008089,
-            "averagePnL": 505
+            "tradeCount": 27,
+            "profitFactor": 3.9352881698685542,
+            "averagePnL": 537.5925925925926
           }
         ]
       }
@@ -1296,7 +1306,7 @@
       "rule": {
         "ruleId": "KDK-E0079",
         "directionRank": 1,
-        "conditionText": "eveningInit3Pct >= 0.001079 AND eveningInit5RangePct >= 0.004545",
+        "conditionText": "eveningInit3Pct >= 0.001079 AND eveningInit5RangePct >= 0.004544",
         "metrics": {
           "profitFactor": 3.4890700815366915,
           "winRate": 0.6923076923076923,
@@ -1311,7 +1321,7 @@
             {
               "feature": "eveningInit3Pct",
               "operator": ">=",
-              "threshold": 0.0010794995143286613,
+              "threshold": 0.0010790077381824497,
               "description": "夕場開始から3本目までの価格変化率",
               "unit": "%",
               "availability": "AFTER_10M_3_BARS",
@@ -1345,7 +1355,7 @@
             {
               "feature": "eveningInit5RangePct",
               "operator": ">=",
-              "threshold": 0.004545008014795965,
+              "threshold": 0.0045437564408827335,
               "description": "夕場開始から5本目までの値幅を始値で割った比率",
               "unit": "%",
               "availability": "AFTER_10M_5_BARS",
@@ -1388,137 +1398,29 @@
           ]
         },
         "exit": {
-          "scenarioName": "recent_high_low_24",
+          "scenarioName": "recent_high_low_12",
           "strategy": "RECENT_HIGH_LOW",
           "description": "Entry前の指定本数から最高値と最安値を使用します。",
           "takeProfit": 0,
           "stopLoss": 0,
           "takeProfitAtrMultiplier": null,
           "stopLossAtrMultiplier": null,
-          "recentLookbackBars": 24,
+          "recentLookbackBars": 12,
           "inputs": [
             {
               "id": "recentHigh",
-              "label": "Entry前24本の最高値",
+              "label": "Entry前12本の最高値",
               "timeframe": "10M",
-              "targetBar": "PRE_ENTRY_24",
+              "targetBar": "PRE_ENTRY_12",
               "priceType": "HIGH",
               "value": null,
               "source": "INPUT",
               "calculator": {
                 "kind": "MAX",
-                "formula": "Entry前24本の高値の最大値",
+                "formula": "Entry前12本の高値の最大値",
                 "inputs": [
                   {
                     "id": "high1",
-                    "label": "Entry前24本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_24",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high2",
-                    "label": "Entry前23本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_23",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high3",
-                    "label": "Entry前22本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_22",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high4",
-                    "label": "Entry前21本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_21",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high5",
-                    "label": "Entry前20本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_20",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high6",
-                    "label": "Entry前19本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_19",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high7",
-                    "label": "Entry前18本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_18",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high8",
-                    "label": "Entry前17本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_17",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high9",
-                    "label": "Entry前16本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_16",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high10",
-                    "label": "Entry前15本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_15",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high11",
-                    "label": "Entry前14本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_14",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high12",
-                    "label": "Entry前13本目 高値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_13",
-                    "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "high13",
                     "label": "Entry前12本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_12",
@@ -1527,7 +1429,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high14",
+                    "id": "high2",
                     "label": "Entry前11本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_11",
@@ -1536,7 +1438,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high15",
+                    "id": "high3",
                     "label": "Entry前10本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_10",
@@ -1545,7 +1447,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high16",
+                    "id": "high4",
                     "label": "Entry前9本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_9",
@@ -1554,7 +1456,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high17",
+                    "id": "high5",
                     "label": "Entry前8本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_8",
@@ -1563,7 +1465,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high18",
+                    "id": "high6",
                     "label": "Entry前7本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_7",
@@ -1572,7 +1474,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high19",
+                    "id": "high7",
                     "label": "Entry前6本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_6",
@@ -1581,7 +1483,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high20",
+                    "id": "high8",
                     "label": "Entry前5本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_5",
@@ -1590,7 +1492,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high21",
+                    "id": "high9",
                     "label": "Entry前4本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_4",
@@ -1599,7 +1501,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high22",
+                    "id": "high10",
                     "label": "Entry前3本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_3",
@@ -1608,7 +1510,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high23",
+                    "id": "high11",
                     "label": "Entry前2本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_2",
@@ -1617,7 +1519,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "high24",
+                    "id": "high12",
                     "label": "Entry前1本目 高値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_1",
@@ -1630,126 +1532,18 @@
             },
             {
               "id": "recentLow",
-              "label": "Entry前24本の最安値",
+              "label": "Entry前12本の最安値",
               "timeframe": "10M",
-              "targetBar": "PRE_ENTRY_24",
+              "targetBar": "PRE_ENTRY_12",
               "priceType": "LOW",
               "value": null,
               "source": "INPUT",
               "calculator": {
                 "kind": "MIN",
-                "formula": "Entry前24本の安値の最小値",
+                "formula": "Entry前12本の安値の最小値",
                 "inputs": [
                   {
                     "id": "low1",
-                    "label": "Entry前24本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_24",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low2",
-                    "label": "Entry前23本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_23",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low3",
-                    "label": "Entry前22本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_22",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low4",
-                    "label": "Entry前21本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_21",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low5",
-                    "label": "Entry前20本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_20",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low6",
-                    "label": "Entry前19本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_19",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low7",
-                    "label": "Entry前18本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_18",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low8",
-                    "label": "Entry前17本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_17",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low9",
-                    "label": "Entry前16本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_16",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low10",
-                    "label": "Entry前15本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_15",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low11",
-                    "label": "Entry前14本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_14",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low12",
-                    "label": "Entry前13本目 安値",
-                    "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_13",
-                    "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT"
-                  },
-                  {
-                    "id": "low13",
                     "label": "Entry前12本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_12",
@@ -1758,7 +1552,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low14",
+                    "id": "low2",
                     "label": "Entry前11本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_11",
@@ -1767,7 +1561,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low15",
+                    "id": "low3",
                     "label": "Entry前10本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_10",
@@ -1776,7 +1570,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low16",
+                    "id": "low4",
                     "label": "Entry前9本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_9",
@@ -1785,7 +1579,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low17",
+                    "id": "low5",
                     "label": "Entry前8本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_8",
@@ -1794,7 +1588,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low18",
+                    "id": "low6",
                     "label": "Entry前7本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_7",
@@ -1803,7 +1597,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low19",
+                    "id": "low7",
                     "label": "Entry前6本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_6",
@@ -1812,7 +1606,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low20",
+                    "id": "low8",
                     "label": "Entry前5本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_5",
@@ -1821,7 +1615,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low21",
+                    "id": "low9",
                     "label": "Entry前4本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_4",
@@ -1830,7 +1624,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low22",
+                    "id": "low10",
                     "label": "Entry前3本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_3",
@@ -1839,7 +1633,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low23",
+                    "id": "low11",
                     "label": "Entry前2本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_2",
@@ -1848,7 +1642,7 @@
                     "source": "INPUT"
                   },
                   {
-                    "id": "low24",
+                    "id": "low12",
                     "label": "Entry前1本目 安値",
                     "timeframe": "10M",
                     "targetBar": "PRE_ENTRY_1",
@@ -1935,9 +1729,9 @@
         ],
         "confirmationOptions": [
           {
-            "ruleId": "KDK-XA0175",
-            "rank": 19,
-            "conditionText": "init3Move >= 35 AND init3Range >= 120",
+            "ruleId": "KDK-XA0007",
+            "rank": 11,
+            "conditionText": "init3Move >= 35",
             "sampleGroup": "REFERENCE",
             "conditions": [
               {
@@ -1973,125 +1767,91 @@
                 },
                 "value": null,
                 "source": "INPUT"
-              },
-              {
-                "feature": "init3Range",
-                "operator": ">=",
-                "threshold": 120,
-                "description": "ザラ場開始から3本目までの高値と安値の差",
-                "unit": "円",
-                "availability": "AFTER_10M_3_BARS",
-                "formula": "H1-3 - L1-3",
-                "calculator": {
-                  "kind": "RANGE",
-                  "inputs": [
-                    {
-                      "id": "high",
-                      "label": "3本最高値",
-                      "timeframe": "DAY_10M",
-                      "targetBar": "1-3",
-                      "priceType": "HIGH",
-                      "value": null,
-                      "source": "INPUT"
-                    },
-                    {
-                      "id": "low",
-                      "label": "3本最安値",
-                      "timeframe": "DAY_10M",
-                      "targetBar": "1-3",
-                      "priceType": "LOW",
-                      "value": null,
-                      "source": "INPUT"
-                    }
-                  ]
-                },
-                "value": null,
-                "source": "INPUT"
               }
             ],
             "metrics": {
-              "profitFactor": 2.5103668261562997,
-              "winRate": 0.525,
-              "averagePnL": 236.75,
-              "tradeCount": 40
+              "profitFactor": 1.9937853107344632,
+              "winRate": 0.5079365079365079,
+              "averagePnL": 139.6031746031746,
+              "tradeCount": 63
             },
             "baselineMetrics": {
-              "profitFactor": 1.434960327001683,
-              "winRate": 0.5747126436781609,
-              "averagePnL": 51.98275862068966,
-              "tradeCount": 174
+              "profitFactor": 1.4925954793452845,
+              "winRate": 0.5657142857142857,
+              "averagePnL": 54.17142857142857,
+              "tradeCount": 175
             },
             "differences": {
-              "profitFactor": 1.0754064991546166,
-              "winRate": -0.04971264367816086,
-              "averagePnL": 184.76724137931035,
-              "tradeCount": -134
+              "profitFactor": 0.5011898313891787,
+              "winRate": -0.05777777777777782,
+              "averagePnL": 85.43174603174603,
+              "tradeCount": -112
             },
-            "confirmationRate": 0.22988505747126436,
+            "confirmationRate": 0.36,
             "yearlyValidation": [
               {
                 "year": "2018",
                 "status": "PASS",
-                "tradeCount": 2,
-                "profitFactor": 1.1666666666666667,
-                "winRate": 0.5,
-                "averagePnL": 5
+                "tradeCount": 3,
+                "profitFactor": 1.6666666666666667,
+                "winRate": 0.6666666666666666,
+                "averagePnL": 13.333333333333334
               },
               {
                 "year": "2020",
-                "status": "FAIL",
-                "tradeCount": 5,
-                "profitFactor": 0.0847457627118644,
-                "winRate": 0.2,
-                "averagePnL": -162
+                "status": "PASS",
+                "tradeCount": 10,
+                "profitFactor": 1.897810218978102,
+                "winRate": 0.5,
+                "averagePnL": 61.5
               },
               {
                 "year": "2021",
-                "status": "NO_TRADE",
-                "tradeCount": 0,
-                "profitFactor": null,
-                "winRate": 0,
-                "averagePnL": 0
+                "status": "FAIL",
+                "tradeCount": 2,
+                "profitFactor": 0.43333333333333335,
+                "winRate": 0.5,
+                "averagePnL": -42.5
               },
               {
                 "year": "2022",
                 "status": "FAIL",
-                "tradeCount": 3,
-                "profitFactor": 0.20930232558139536,
-                "winRate": 0.6666666666666666,
-                "averagePnL": -113.33333333333333
+                "tradeCount": 9,
+                "profitFactor": 0.8280254777070064,
+                "winRate": 0.3333333333333333,
+                "averagePnL": -15
               },
               {
                 "year": "2023",
                 "status": "PASS",
-                "tradeCount": 1,
-                "profitFactor": null,
-                "winRate": 1,
-                "averagePnL": 335
+                "tradeCount": 4,
+                "profitFactor": 3.096774193548387,
+                "winRate": 0.5,
+                "averagePnL": 81.25
               },
               {
                 "year": "2024",
                 "status": "FAIL",
-                "tradeCount": 5,
-                "profitFactor": 0.8288590604026845,
-                "winRate": 0.6,
-                "averagePnL": -51
+                "tradeCount": 10,
+                "profitFactor": 0.9951923076923077,
+                "winRate": 0.7,
+                "averagePnL": -1
               },
               {
                 "year": "2025",
                 "status": "FAIL",
                 "tradeCount": 7,
-                "profitFactor": 0.26401869158878505,
-                "winRate": 0.42857142857142855,
-                "averagePnL": -225
+                "profitFactor": 0.0012919896640826874,
+                "winRate": 0.14285714285714285,
+                "averagePnL": -552.1428571428571
               },
               {
                 "year": "2026",
                 "status": "PASS",
-                "tradeCount": 17,
-                "profitFactor": 10.569169960474309,
-                "winRate": 0.5882352941176471,
-                "averagePnL": 712.0588235294117
+                "tradeCount": 18,
+                "profitFactor": 12.183098591549296,
+                "winRate": 0.6111111111111112,
+                "averagePnL": 661.6666666666666
               }
             ]
           }
