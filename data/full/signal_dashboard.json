@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-21T07:57:26.481Z",
+  "generatedAt": "2026-08-21T20:40:07.803Z",
   "inputContext": {
     "activeSession": "EVENING",
     "sessions": {
       "DAY": {
-        "tradeDate": "2026-08-21",
+        "tradeDate": null,
         "automatic": false
       },
       "EVENING": {
@@ -60,7 +60,9 @@
                     "targetBar": "5",
                     "priceType": "CLOSE",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "open",
@@ -69,12 +71,16 @@
                     "targetBar": "1",
                     "priceType": "OPEN",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               },
               "value": null,
-              "source": "INPUT"
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null
             },
             {
               "feature": "init3Pct",
@@ -94,7 +100,9 @@
                     "targetBar": "3",
                     "priceType": "CLOSE",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "open",
@@ -103,12 +111,16 @@
                     "targetBar": "1",
                     "priceType": "OPEN",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               },
               "value": null,
-              "source": "INPUT"
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null
             }
           ]
         },
@@ -130,6 +142,8 @@
               "priceType": "OPEN",
               "value": null,
               "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null,
               "calculator": null
             }
           ]
@@ -246,7 +260,9 @@
                     "targetBar": "5",
                     "priceType": "CLOSE",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "open",
@@ -255,12 +271,16 @@
                     "targetBar": "1",
                     "priceType": "OPEN",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               },
               "value": null,
-              "source": "INPUT"
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null
             },
             {
               "feature": "bar1BodyRatio",
@@ -280,7 +300,9 @@
                     "targetBar": "1",
                     "priceType": "OPEN",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high",
@@ -289,7 +311,9 @@
                     "targetBar": "1",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low",
@@ -298,7 +322,9 @@
                     "targetBar": "1",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "close",
@@ -307,12 +333,16 @@
                     "targetBar": "1",
                     "priceType": "CLOSE",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               },
               "value": null,
-              "source": "INPUT"
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null
             }
           ]
         },
@@ -334,6 +364,8 @@
               "priceType": "HIGH",
               "value": null,
               "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null,
               "calculator": {
                 "kind": "MAX",
                 "formula": "Entry前12本の高値の最大値",
@@ -345,7 +377,9 @@
                     "targetBar": "PRE_ENTRY_12",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high2",
@@ -354,7 +388,9 @@
                     "targetBar": "PRE_ENTRY_11",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high3",
@@ -363,7 +399,9 @@
                     "targetBar": "PRE_ENTRY_10",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high4",
@@ -372,7 +410,9 @@
                     "targetBar": "PRE_ENTRY_9",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high5",
@@ -381,7 +421,9 @@
                     "targetBar": "PRE_ENTRY_8",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high6",
@@ -390,7 +432,9 @@
                     "targetBar": "PRE_ENTRY_7",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high7",
@@ -399,7 +443,9 @@
                     "targetBar": "PRE_ENTRY_6",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high8",
@@ -408,7 +454,9 @@
                     "targetBar": "PRE_ENTRY_5",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high9",
@@ -417,7 +465,9 @@
                     "targetBar": "PRE_ENTRY_4",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high10",
@@ -426,7 +476,9 @@
                     "targetBar": "PRE_ENTRY_3",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high11",
@@ -435,7 +487,9 @@
                     "targetBar": "PRE_ENTRY_2",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high12",
@@ -444,7 +498,9 @@
                     "targetBar": "PRE_ENTRY_1",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               }
@@ -457,6 +513,8 @@
               "priceType": "LOW",
               "value": null,
               "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null,
               "calculator": {
                 "kind": "MIN",
                 "formula": "Entry前12本の安値の最小値",
@@ -468,7 +526,9 @@
                     "targetBar": "PRE_ENTRY_12",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low2",
@@ -477,7 +537,9 @@
                     "targetBar": "PRE_ENTRY_11",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low3",
@@ -486,7 +548,9 @@
                     "targetBar": "PRE_ENTRY_10",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low4",
@@ -495,7 +559,9 @@
                     "targetBar": "PRE_ENTRY_9",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low5",
@@ -504,7 +570,9 @@
                     "targetBar": "PRE_ENTRY_8",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low6",
@@ -513,7 +581,9 @@
                     "targetBar": "PRE_ENTRY_7",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low7",
@@ -522,7 +592,9 @@
                     "targetBar": "PRE_ENTRY_6",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low8",
@@ -531,7 +603,9 @@
                     "targetBar": "PRE_ENTRY_5",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low9",
@@ -540,7 +614,9 @@
                     "targetBar": "PRE_ENTRY_4",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low10",
@@ -549,7 +625,9 @@
                     "targetBar": "PRE_ENTRY_3",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low11",
@@ -558,7 +636,9 @@
                     "targetBar": "PRE_ENTRY_2",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low12",
@@ -567,7 +647,9 @@
                     "targetBar": "PRE_ENTRY_1",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               }
@@ -700,7 +782,9 @@
                     "targetBar": "3",
                     "priceType": "CLOSE",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "open",
@@ -709,12 +793,16 @@
                     "targetBar": "1",
                     "priceType": "OPEN",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               },
               "value": null,
-              "source": "INPUT"
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null
             },
             {
               "feature": "eveningInit5RangePct",
@@ -734,7 +822,9 @@
                     "targetBar": "1-5",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low",
@@ -743,7 +833,9 @@
                     "targetBar": "1-5",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "open",
@@ -752,12 +844,16 @@
                     "targetBar": "1",
                     "priceType": "OPEN",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               },
               "value": null,
-              "source": "INPUT"
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null
             }
           ]
         },
@@ -779,6 +875,8 @@
               "priceType": "HIGH",
               "value": null,
               "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null,
               "calculator": {
                 "kind": "MAX",
                 "formula": "Entry前12本の高値の最大値",
@@ -790,7 +888,9 @@
                     "targetBar": "PRE_ENTRY_12",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high2",
@@ -799,7 +899,9 @@
                     "targetBar": "PRE_ENTRY_11",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high3",
@@ -808,7 +910,9 @@
                     "targetBar": "PRE_ENTRY_10",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high4",
@@ -817,7 +921,9 @@
                     "targetBar": "PRE_ENTRY_9",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high5",
@@ -826,7 +932,9 @@
                     "targetBar": "PRE_ENTRY_8",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high6",
@@ -835,7 +943,9 @@
                     "targetBar": "PRE_ENTRY_7",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high7",
@@ -844,7 +954,9 @@
                     "targetBar": "PRE_ENTRY_6",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high8",
@@ -853,7 +965,9 @@
                     "targetBar": "PRE_ENTRY_5",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high9",
@@ -862,7 +976,9 @@
                     "targetBar": "PRE_ENTRY_4",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high10",
@@ -871,7 +987,9 @@
                     "targetBar": "PRE_ENTRY_3",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high11",
@@ -880,7 +998,9 @@
                     "targetBar": "PRE_ENTRY_2",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high12",
@@ -889,7 +1009,9 @@
                     "targetBar": "PRE_ENTRY_1",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               }
@@ -902,6 +1024,8 @@
               "priceType": "LOW",
               "value": null,
               "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null,
               "calculator": {
                 "kind": "MIN",
                 "formula": "Entry前12本の安値の最小値",
@@ -913,7 +1037,9 @@
                     "targetBar": "PRE_ENTRY_12",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low2",
@@ -922,7 +1048,9 @@
                     "targetBar": "PRE_ENTRY_11",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low3",
@@ -931,7 +1059,9 @@
                     "targetBar": "PRE_ENTRY_10",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low4",
@@ -940,7 +1070,9 @@
                     "targetBar": "PRE_ENTRY_9",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low5",
@@ -949,7 +1081,9 @@
                     "targetBar": "PRE_ENTRY_8",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low6",
@@ -958,7 +1092,9 @@
                     "targetBar": "PRE_ENTRY_7",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low7",
@@ -967,7 +1103,9 @@
                     "targetBar": "PRE_ENTRY_6",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low8",
@@ -976,7 +1114,9 @@
                     "targetBar": "PRE_ENTRY_5",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low9",
@@ -985,7 +1125,9 @@
                     "targetBar": "PRE_ENTRY_4",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low10",
@@ -994,7 +1136,9 @@
                     "targetBar": "PRE_ENTRY_3",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low11",
@@ -1003,7 +1147,9 @@
                     "targetBar": "PRE_ENTRY_2",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low12",
@@ -1012,7 +1158,9 @@
                     "targetBar": "PRE_ENTRY_1",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               }
@@ -1131,7 +1279,9 @@
                     "targetBar": "3",
                     "priceType": "CLOSE",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "open",
@@ -1140,12 +1290,16 @@
                     "targetBar": "1",
                     "priceType": "OPEN",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               },
               "value": null,
-              "source": "INPUT"
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null
             },
             {
               "feature": "init5RangePct",
@@ -1165,7 +1319,9 @@
                     "targetBar": "1-5",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low",
@@ -1174,7 +1330,9 @@
                     "targetBar": "1-5",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "open",
@@ -1183,12 +1341,16 @@
                     "targetBar": "1",
                     "priceType": "OPEN",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               },
               "value": null,
-              "source": "INPUT"
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null
             }
           ]
         },
@@ -1210,6 +1372,8 @@
               "priceType": "OPEN",
               "value": null,
               "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null,
               "calculator": null
             },
             {
@@ -1220,6 +1384,8 @@
               "priceType": "ATR14",
               "value": null,
               "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null,
               "calculator": null
             }
           ]
@@ -1336,7 +1502,9 @@
                     "targetBar": "3",
                     "priceType": "CLOSE",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "open",
@@ -1345,12 +1513,16 @@
                     "targetBar": "1",
                     "priceType": "OPEN",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               },
               "value": null,
-              "source": "INPUT"
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null
             },
             {
               "feature": "eveningInit5RangePct",
@@ -1370,7 +1542,9 @@
                     "targetBar": "1-5",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low",
@@ -1379,7 +1553,9 @@
                     "targetBar": "1-5",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "open",
@@ -1388,12 +1564,16 @@
                     "targetBar": "1",
                     "priceType": "OPEN",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               },
               "value": null,
-              "source": "INPUT"
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null
             }
           ]
         },
@@ -1415,6 +1595,8 @@
               "priceType": "HIGH",
               "value": null,
               "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null,
               "calculator": {
                 "kind": "MAX",
                 "formula": "Entry前12本の高値の最大値",
@@ -1426,7 +1608,9 @@
                     "targetBar": "PRE_ENTRY_12",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high2",
@@ -1435,7 +1619,9 @@
                     "targetBar": "PRE_ENTRY_11",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high3",
@@ -1444,7 +1630,9 @@
                     "targetBar": "PRE_ENTRY_10",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high4",
@@ -1453,7 +1641,9 @@
                     "targetBar": "PRE_ENTRY_9",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high5",
@@ -1462,7 +1652,9 @@
                     "targetBar": "PRE_ENTRY_8",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high6",
@@ -1471,7 +1663,9 @@
                     "targetBar": "PRE_ENTRY_7",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high7",
@@ -1480,7 +1674,9 @@
                     "targetBar": "PRE_ENTRY_6",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high8",
@@ -1489,7 +1685,9 @@
                     "targetBar": "PRE_ENTRY_5",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high9",
@@ -1498,7 +1696,9 @@
                     "targetBar": "PRE_ENTRY_4",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high10",
@@ -1507,7 +1707,9 @@
                     "targetBar": "PRE_ENTRY_3",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high11",
@@ -1516,7 +1718,9 @@
                     "targetBar": "PRE_ENTRY_2",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "high12",
@@ -1525,7 +1729,9 @@
                     "targetBar": "PRE_ENTRY_1",
                     "priceType": "HIGH",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               }
@@ -1538,6 +1744,8 @@
               "priceType": "LOW",
               "value": null,
               "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null,
               "calculator": {
                 "kind": "MIN",
                 "formula": "Entry前12本の安値の最小値",
@@ -1549,7 +1757,9 @@
                     "targetBar": "PRE_ENTRY_12",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low2",
@@ -1558,7 +1768,9 @@
                     "targetBar": "PRE_ENTRY_11",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low3",
@@ -1567,7 +1779,9 @@
                     "targetBar": "PRE_ENTRY_10",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low4",
@@ -1576,7 +1790,9 @@
                     "targetBar": "PRE_ENTRY_9",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low5",
@@ -1585,7 +1801,9 @@
                     "targetBar": "PRE_ENTRY_8",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low6",
@@ -1594,7 +1812,9 @@
                     "targetBar": "PRE_ENTRY_7",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low7",
@@ -1603,7 +1823,9 @@
                     "targetBar": "PRE_ENTRY_6",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low8",
@@ -1612,7 +1834,9 @@
                     "targetBar": "PRE_ENTRY_5",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low9",
@@ -1621,7 +1845,9 @@
                     "targetBar": "PRE_ENTRY_4",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low10",
@@ -1630,7 +1856,9 @@
                     "targetBar": "PRE_ENTRY_3",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low11",
@@ -1639,7 +1867,9 @@
                     "targetBar": "PRE_ENTRY_2",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   },
                   {
                     "id": "low12",
@@ -1648,7 +1878,9 @@
                     "targetBar": "PRE_ENTRY_1",
                     "priceType": "LOW",
                     "value": null,
-                    "source": "INPUT"
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
                   }
                 ]
               }
@@ -1752,7 +1984,9 @@
                       "targetBar": "3",
                       "priceType": "CLOSE",
                       "value": null,
-                      "source": "INPUT"
+                      "source": "INPUT",
+                      "sourceDateTime": null,
+                      "batchGeneratedAt": null
                     },
                     {
                       "id": "open",
@@ -1761,12 +1995,16 @@
                       "targetBar": "1",
                       "priceType": "OPEN",
                       "value": null,
-                      "source": "INPUT"
+                      "source": "INPUT",
+                      "sourceDateTime": null,
+                      "batchGeneratedAt": null
                     }
                   ]
                 },
                 "value": null,
-                "source": "INPUT"
+                "source": "INPUT",
+                "sourceDateTime": null,
+                "batchGeneratedAt": null
               },
               {
                 "feature": "init3Range",
@@ -1786,7 +2024,9 @@
                       "targetBar": "1-3",
                       "priceType": "HIGH",
                       "value": null,
-                      "source": "INPUT"
+                      "source": "INPUT",
+                      "sourceDateTime": null,
+                      "batchGeneratedAt": null
                     },
                     {
                       "id": "low",
@@ -1795,12 +2035,16 @@
                       "targetBar": "1-3",
                       "priceType": "LOW",
                       "value": null,
-                      "source": "INPUT"
+                      "source": "INPUT",
+                      "sourceDateTime": null,
+                      "batchGeneratedAt": null
                     }
                   ]
                 },
                 "value": null,
-                "source": "INPUT"
+                "source": "INPUT",
+                "sourceDateTime": null,
+                "batchGeneratedAt": null
               }
             ],
             "metrics": {
