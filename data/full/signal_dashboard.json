@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-21T21:07:49.002Z",
+  "generatedAt": "2026-08-21T07:00:00+09:00",
   "inputContext": {
     "activeSession": "DAY",
     "sessions": {
       "DAY": {
-        "tradeDate": null,
-        "automatic": false
+        "tradeDate": "2026-08-21",
+        "automatic": true
       },
       "EVENING": {
         "tradeDate": null,
@@ -59,10 +59,10 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "5",
                     "priceType": "CLOSE",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65565,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:40",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "open",
@@ -70,17 +70,17 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65785,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:00",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   }
                 ]
               },
-              "value": null,
-              "source": "INPUT",
-              "sourceDateTime": null,
-              "batchGeneratedAt": null
+              "value": -220,
+              "source": "AUTO",
+              "sourceDateTime": "2026-08-21 0:40",
+              "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
             },
             {
               "feature": "init3Pct",
@@ -99,10 +99,10 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "3",
                     "priceType": "CLOSE",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65700,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:20",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "open",
@@ -110,17 +110,17 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65785,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:00",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   }
                 ]
               },
-              "value": null,
-              "source": "INPUT",
-              "sourceDateTime": null,
-              "batchGeneratedAt": null
+              "value": -0.0012920878619746142,
+              "source": "AUTO",
+              "sourceDateTime": "2026-08-21 0:20",
+              "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
             }
           ]
         },
@@ -140,10 +140,10 @@
               "timeframe": "DAY_10M",
               "targetBar": "6",
               "priceType": "OPEN",
-              "value": null,
-              "source": "INPUT",
-              "sourceDateTime": null,
-              "batchGeneratedAt": null,
+              "value": 65560,
+              "source": "AUTO",
+              "sourceDateTime": "2026-08-21 0:50",
+              "batchGeneratedAt": "2026-08-21T07:00:00+09:00",
               "calculator": null
             }
           ]
@@ -259,10 +259,10 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "5",
                     "priceType": "CLOSE",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65565,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:40",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "open",
@@ -270,17 +270,17 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65785,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:00",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   }
                 ]
               },
-              "value": null,
-              "source": "INPUT",
-              "sourceDateTime": null,
-              "batchGeneratedAt": null
+              "value": -0.0033442274074637077,
+              "source": "AUTO",
+              "sourceDateTime": "2026-08-21 0:40",
+              "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
             },
             {
               "feature": "bar1BodyRatio",
@@ -299,10 +299,10 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65785,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:00",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "high",
@@ -310,10 +310,10 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65995,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:00",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "low",
@@ -321,10 +321,10 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65745,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:00",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "close",
@@ -332,17 +332,17 @@
                     "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "CLOSE",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65785,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:00",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   }
                 ]
               },
-              "value": null,
-              "source": "INPUT",
-              "sourceDateTime": null,
-              "batchGeneratedAt": null
+              "value": 0,
+              "source": "AUTO",
+              "sourceDateTime": "2026-08-21 0:00",
+              "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
             }
           ]
         },
@@ -372,58 +372,58 @@
                 "inputs": [
                   {
                     "id": "high1",
-                    "label": "Entry前12本目 高値",
+                    "label": "0:00 高値",
                     "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_12",
+                    "targetBar": "0:00",
                     "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65995,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:00",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "high2",
-                    "label": "Entry前11本目 高値",
+                    "label": "0:10 高値",
                     "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_11",
+                    "targetBar": "0:10",
                     "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65855,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:10",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "high3",
-                    "label": "Entry前10本目 高値",
+                    "label": "0:20 高値",
                     "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_10",
+                    "targetBar": "0:20",
                     "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65810,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:20",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "high4",
-                    "label": "Entry前9本目 高値",
+                    "label": "0:30 高値",
                     "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_9",
+                    "targetBar": "0:30",
                     "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65730,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:30",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "high5",
-                    "label": "Entry前8本目 高値",
+                    "label": "0:40 高値",
                     "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_8",
+                    "targetBar": "0:40",
                     "priceType": "HIGH",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65595,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:40",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "high6",
@@ -521,58 +521,58 @@
                 "inputs": [
                   {
                     "id": "low1",
-                    "label": "Entry前12本目 安値",
+                    "label": "0:00 安値",
                     "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_12",
+                    "targetBar": "0:00",
                     "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65745,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:00",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "low2",
-                    "label": "Entry前11本目 安値",
+                    "label": "0:10 安値",
                     "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_11",
+                    "targetBar": "0:10",
                     "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65730,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:10",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "low3",
-                    "label": "Entry前10本目 安値",
+                    "label": "0:20 安値",
                     "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_10",
+                    "targetBar": "0:20",
                     "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65620,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:20",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "low4",
-                    "label": "Entry前9本目 安値",
+                    "label": "0:30 安値",
                     "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_9",
+                    "targetBar": "0:30",
                     "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65505,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:30",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "low5",
-                    "label": "Entry前8本目 安値",
+                    "label": "0:40 安値",
                     "timeframe": "10M",
-                    "targetBar": "PRE_ENTRY_8",
+                    "targetBar": "0:40",
                     "priceType": "LOW",
-                    "value": null,
-                    "source": "INPUT",
-                    "sourceDateTime": null,
-                    "batchGeneratedAt": null
+                    "value": 65485,
+                    "source": "AUTO",
+                    "sourceDateTime": "2026-08-21 0:40",
+                    "batchGeneratedAt": "2026-08-21T07:00:00+09:00"
                   },
                   {
                     "id": "low6",
