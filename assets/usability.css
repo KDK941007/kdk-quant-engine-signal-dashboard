@@ -142,6 +142,36 @@ header small {
   overflow-anchor: none;
 }
 
+.actions button.savedFeedback {
+  background: #087f5b;
+  color: white;
+  border-color: #087f5b;
+}
+
+.saveFeedback {
+  position: fixed;
+  left: 50%;
+  bottom: max(22px, env(safe-area-inset-bottom));
+  z-index: 30;
+  max-width: calc(100% - 32px);
+  padding: 11px 18px;
+  border-radius: 999px;
+  background: #087f5b;
+  color: white;
+  font-weight: 800;
+  box-shadow: 0 8px 24px #14213d40;
+  opacity: 0;
+  transform: translate(-50%, 16px);
+  pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+.saveFeedback.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .card, .message { will-change: auto; }
+  .saveFeedback { transition: none; }
 }
