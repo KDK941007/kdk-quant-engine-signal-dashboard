@@ -95,7 +95,7 @@
                 "inputs": [
                   {
                     "id": "high",
-                    "label": "5本最高値",
+                    "label": "1～5本目の最高値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1-5",
                     "priceType": "HIGH",
@@ -106,7 +106,7 @@
                   },
                   {
                     "id": "low",
-                    "label": "5本最安値",
+                    "label": "1～5本目の最安値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1-5",
                     "priceType": "LOW",
@@ -317,7 +317,7 @@
                 "inputs": [
                   {
                     "id": "high",
-                    "label": "5本最高値",
+                    "label": "1～5本目の最高値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1-5",
                     "priceType": "HIGH",
@@ -328,7 +328,7 @@
                   },
                   {
                     "id": "low",
-                    "label": "5本最安値",
+                    "label": "1～5本目の最安値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1-5",
                     "priceType": "LOW",
@@ -565,7 +565,7 @@
                 "inputs": [
                   {
                     "id": "high",
-                    "label": "5本最高値",
+                    "label": "1～5本目の最高値",
                     "timeframe": "EVENING_10M",
                     "targetBar": "1-5",
                     "priceType": "HIGH",
@@ -576,7 +576,7 @@
                   },
                   {
                     "id": "low",
-                    "label": "5本最安値",
+                    "label": "1～5本目の最安値",
                     "timeframe": "EVENING_10M",
                     "targetBar": "1-5",
                     "priceType": "LOW",
@@ -725,7 +725,7 @@
                 "inputs": [
                   {
                     "id": "high",
-                    "label": "5本最高値",
+                    "label": "1～5本目の最高値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1-5",
                     "priceType": "HIGH",
@@ -736,7 +736,7 @@
                   },
                   {
                     "id": "low",
-                    "label": "5本最安値",
+                    "label": "1～5本目の最安値",
                     "timeframe": "DAY_10M",
                     "targetBar": "1-5",
                     "priceType": "LOW",
@@ -1262,7 +1262,7 @@
                 "inputs": [
                   {
                     "id": "high",
-                    "label": "5本最高値",
+                    "label": "1～5本目の最高値",
                     "timeframe": "EVENING_10M",
                     "targetBar": "1-5",
                     "priceType": "HIGH",
@@ -1273,7 +1273,7 @@
                   },
                   {
                     "id": "low",
-                    "label": "5本最安値",
+                    "label": "1～5本目の最安値",
                     "timeframe": "EVENING_10M",
                     "targetBar": "1-5",
                     "priceType": "LOW",
@@ -1447,7 +1447,7 @@
                   "inputs": [
                     {
                       "id": "high",
-                      "label": "5本最高値",
+                      "label": "1～5本目の最高値",
                       "timeframe": "DAY_10M",
                       "targetBar": "1-5",
                       "priceType": "HIGH",
@@ -1458,7 +1458,7 @@
                     },
                     {
                       "id": "low",
-                      "label": "5本最安値",
+                      "label": "1～5本目の最安値",
                       "timeframe": "DAY_10M",
                       "targetBar": "1-5",
                       "priceType": "LOW",
