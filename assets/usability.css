@@ -83,8 +83,15 @@ header small {
 .exitInputs label { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .exitInputs label > span { font-size: 13px; font-weight: 700; }
 .exitInputs input { width: 43%; padding: 9px; border: 1px solid #aeb8c8; border-radius: 8px; font-size: 16px; }
-.card .actions { flex-wrap: wrap; }
-.card .actions #save { flex-basis: 100%; }
+.card .actions { flex-wrap: nowrap; gap: 4px; }
+.card .actions button { min-width: 0; padding: 9px 2px; white-space: nowrap; font-size: clamp(8px, 2.6vw, 11px); letter-spacing: -.03em; }
+
+.metrics { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; }
+.metrics > div { min-width: 0; padding: 9px 2px; }
+.metrics small { white-space: nowrap; font-size: clamp(9px, 2.7vw, 12px); }
+.metrics strong { white-space: nowrap; font-size: clamp(13px, 4vw, 17px); }
+
+#inputs .inputRow + .inputRow { margin-top: 16px; padding-top: 16px; border-top: 1px dashed #cfd7e5; }
 
 .confirmationSelector {
   margin: 10px 0 12px;
