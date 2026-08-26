@@ -151,11 +151,13 @@ header small {
 .periodJudgmentCard { flex: 0 0 min(150px, 46vw); padding: 6px; border: 1px solid #d7deea; border-radius: 9px; background: white; box-shadow: 0 2px 8px #23304a12; scroll-snap-align: start; }
 .periodJudgmentCard.current { border-color: #1d4ed8; box-shadow: 0 0 0 2px #dbe7ff; }
 .periodJudgmentCard > b { display: block; overflow: hidden; white-space: nowrap; font-size: 9px; line-height: 1.25; }
-.periodJudgmentRow { display: grid; grid-template-columns: 38px 1fr; align-items: center; gap: 4px; width: 100%; min-height: 27px; margin-top: 3px; padding: 3px 4px; border: 0; border-radius: 7px; background: #f4f7fb; text-align: left; }
+.periodJudgmentRow { display: grid; grid-template-columns: 34px 1fr; align-items: center; gap: 3px; width: 100%; min-height: 27px; margin-top: 3px; padding: 3px 4px; border: 0; border-radius: 7px; background: #f4f7fb; text-align: left; }
 .periodJudgmentRow .directionLabel { font-size: 9px; font-weight: 900; }
 .periodJudgmentRow.LONG .directionLabel { color: #d7193f; }
 .periodJudgmentRow.SHORT .directionLabel { color: #168aa0; }
-.periodJudgmentStatus { justify-self: stretch; padding: 3px 4px; border-radius: 999px; color: white; text-align: center; font-size: 9px; font-weight: 800; }
+.periodJudgmentOutcome { display: flex; align-items: center; justify-content: space-between; gap: 2px; min-width: 0; white-space: nowrap; }
+.periodJudgmentStatus { flex: 0 0 auto; padding: 3px 4px; border-radius: 999px; color: white; text-align: center; font-size: 8px; font-weight: 800; }
+.periodJudgmentWinRate { min-width: 0; color: #344054; font-size: 8px; font-weight: 700; letter-spacing: -.2px; }
 .periodJudgmentStatus.entry { background: #087f5b; }
 .periodJudgmentStatus.no-entry { background: #b42318; }
 .periodJudgmentStatus.waiting { background: #9a6700; }
