@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-31T01:19:08.787Z",
+  "generatedAt": "2026-08-31T07:47:45.835Z",
   "full": {
     "path": "data/full/signal_dashboard.json",
-    "sha256": "9594d2d1d8d7b0796135e4eb853ecd8e991312ab1b38cd674abfb1a8794f3229"
+    "sha256": "1677250f8e18a27f64e9e34b63f38aa703a7a4fd03d5ae49bb86694a919e7245"
   },
   "rolling": [
     {
       "key": "3y",
       "label": "直近3年",
-      "requestedStartDate": "2023-08-29",
-      "requestedEndDate": "2026-08-28",
+      "requestedStartDate": "2023-09-01",
+      "requestedEndDate": "2026-08-31",
       "path": "data/rolling/3y/signal_dashboard.json",
-      "sha256": "c53ff4a13cddcb438da98bf9ac0992da3a3bfa43509573581017ad59faaeb87c"
+      "sha256": "62d522ab7593f1984a385ce1f3e6ffbc719455af11a744525d1feb4c54ec5b14"
     }
   ],
   "conditions": [
