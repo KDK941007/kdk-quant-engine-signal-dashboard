@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-31T07:47:45.835Z",
+  "generatedAt": "2026-08-31T23:49:19.190Z",
   "full": {
     "path": "data/full/signal_dashboard.json",
-    "sha256": "1677250f8e18a27f64e9e34b63f38aa703a7a4fd03d5ae49bb86694a919e7245"
+    "sha256": "e95316ef015e8f8b805fb4503880544af9ec0224a7e4563fc46fec550b6f3cf6"
   },
   "rolling": [
     {
@@ -12,7 +12,7 @@
       "requestedStartDate": "2023-09-01",
       "requestedEndDate": "2026-08-31",
       "path": "data/rolling/3y/signal_dashboard.json",
-      "sha256": "62d522ab7593f1984a385ce1f3e6ffbc719455af11a744525d1feb4c54ec5b14"
+      "sha256": "dd4beeae66c607f5bce6edfb51748821a73cf17b81198afade13b17446a944f9"
     }
   ],
   "conditions": [
