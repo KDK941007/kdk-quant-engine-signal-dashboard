@@ -135,6 +135,19 @@ header small {
   font-size: 12px;
 }
 
+#periods {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+}
+
+#periods button {
+  flex: 0 0 auto;
+  min-width: max-content;
+  scroll-snap-align: start;
+}
+
 .swipeSurface {
   touch-action: pan-y;
   overflow: hidden;
