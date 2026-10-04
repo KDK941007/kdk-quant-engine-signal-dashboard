@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T07:42:52.881Z",
+  "generatedAt": "2026-10-04T23:33:22.674Z",
   "full": {
     "path": "data/full/signal_dashboard.json",
-    "sha256": "82aebbcaada60adc2189b519c101df1669fb83eddfc41125c2e4c72648d26038"
+    "sha256": "5cdde6dfb74199f84c2ad781a670dd3a96532873ba0771b378e0dc9b3bb855bc"
   },
   "rolling": [
     {
@@ -12,7 +12,7 @@
       "requestedStartDate": "2016-10-03",
       "requestedEndDate": "2026-10-02",
       "path": "data/rolling/10y/signal_dashboard.json",
-      "sha256": "179fddb8e1d5e1d60941908b082d522db32a3ac2bf530be9f683eaebf9bd5216"
+      "sha256": "9fc9dea05611f76ff548635a04ad7012b3f78675c57792236461ab5596e146ba"
     },
     {
       "key": "5y",
@@ -20,7 +20,7 @@
       "requestedStartDate": "2021-10-03",
       "requestedEndDate": "2026-10-02",
       "path": "data/rolling/5y/signal_dashboard.json",
-      "sha256": "28176229b5113e95237a6299e443155e5afbd014c0aab6b35d8b77339c636ee6"
+      "sha256": "955af339d313b6a0427c487fe78aacd898ff5ac53fd22e4aa6ed57a1cf3a5a0c"
     },
     {
       "key": "3y",
@@ -28,7 +28,7 @@
       "requestedStartDate": "2023-10-03",
       "requestedEndDate": "2026-10-02",
       "path": "data/rolling/3y/signal_dashboard.json",
-      "sha256": "66f79ce35eb6861db81515a9841e1795b6afa865ff65257d7c9b2b42eb5b17ae"
+      "sha256": "0d3d87f55e3538871de2bdd28f1bac091174eac15267d767d5e6924a48c8c905"
     }
   ],
   "conditions": [
