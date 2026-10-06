@@ -1,34 +1,34 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T23:54:32.568Z",
+  "generatedAt": "2026-10-06T07:56:12.663Z",
   "full": {
     "path": "data/full/signal_dashboard.json",
-    "sha256": "c0afee5f6f61c6228fbf575ff618b0ebc8f567b1b642483f11d7877490a28604"
+    "sha256": "2df993d2f391f5f9557b5a8895f4236528183d21c8b7e4dc0ce80e32dbf559c5"
   },
   "rolling": [
     {
       "key": "10y",
       "label": "直近10年",
-      "requestedStartDate": "2016-10-06",
-      "requestedEndDate": "2026-10-05",
+      "requestedStartDate": "2016-10-07",
+      "requestedEndDate": "2026-10-06",
       "path": "data/rolling/10y/signal_dashboard.json",
-      "sha256": "81ad1f5ea69d6b22f1f1d8610c8d1712b3083cfac31011d21deca74764e385ae"
+      "sha256": "c1fa3914d821a0038febe3c75c7bcd275d2289c6d07fab46d50f08ca7e44c037"
     },
     {
       "key": "5y",
       "label": "直近5年",
-      "requestedStartDate": "2021-10-06",
-      "requestedEndDate": "2026-10-05",
+      "requestedStartDate": "2021-10-07",
+      "requestedEndDate": "2026-10-06",
       "path": "data/rolling/5y/signal_dashboard.json",
-      "sha256": "0132815050e664aa8352d32fbeae18e1005a5eb47cec29990b0f45d9b2c09456"
+      "sha256": "d5a25e37d45a567274684edcad68430a3e193609b25a5f29d9ce167a4652bbda"
     },
     {
       "key": "3y",
       "label": "直近3年",
-      "requestedStartDate": "2023-10-06",
-      "requestedEndDate": "2026-10-05",
+      "requestedStartDate": "2023-10-07",
+      "requestedEndDate": "2026-10-06",
       "path": "data/rolling/3y/signal_dashboard.json",
-      "sha256": "1f747e69134bd0e536e802af342d37d85173c7bb1c3fd692d13b8475aecb74a4"
+      "sha256": "480721cbb1d4567822936490ebc2fa909be367dfa4faed2dc71ff7e5552f4056"
     }
   ],
   "conditions": [
