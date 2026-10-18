@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T23:44:35.249Z",
+  "generatedAt": "2026-10-18T22:38:17.168Z",
   "inputContext": {
     "activeSession": "DAY",
     "sessions": {
       "DAY": {
-        "tradeDate": "2026-10-16",
-        "automatic": true
+        "tradeDate": null,
+        "automatic": false
       },
       "EVENING": {
         "tradeDate": null,
@@ -16,10 +16,10 @@
   },
   "analysis": {
     "kind": "CONDITION",
-    "requestedStartDate": "2021-10-16",
-    "requestedEndDate": "2026-10-15",
+    "requestedStartDate": "2021-10-17",
+    "requestedEndDate": "2026-10-16",
     "actualStartDate": "2021-10-18",
-    "actualEndDate": "2026-10-15"
+    "actualEndDate": "2026-10-16"
   },
   "signals": [
     {
@@ -196,170 +196,11 @@
               "timeframe": "PREVIOUS_DAILY",
               "targetBar": "14",
               "priceType": "ATR14",
-              "value": 1571.7857142857142,
-              "source": "AUTO",
-              "sourceDateTime": "2026-10-15",
-              "batchGeneratedAt": "2026-10-15T23:44:35.249Z",
-              "calculator": {
-                "kind": "AVERAGE",
-                "formula": "直近14営業日の値動き幅合計 / 14",
-                "inputs": [
-                  {
-                    "id": "tr1",
-                    "label": "2026-09-28 True Range（高値 66850 / 安値 65570 / 前日終値 66290 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-09-28",
-                    "priceType": "TRUE_RANGE",
-                    "value": 1280,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-09-28",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  },
-                  {
-                    "id": "tr2",
-                    "label": "2026-09-29 True Range（高値 65995 / 安値 64885 / 前日終値 65570 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-09-29",
-                    "priceType": "TRUE_RANGE",
-                    "value": 1110,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-09-29",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  },
-                  {
-                    "id": "tr3",
-                    "label": "2026-09-30 True Range（高値 67150 / 安値 65655 / 前日終値 65810 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-09-30",
-                    "priceType": "TRUE_RANGE",
-                    "value": 1495,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-09-30",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  },
-                  {
-                    "id": "tr4",
-                    "label": "2026-10-01 True Range（高値 69240 / 安値 67010 / 前日終値 67145 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-10-01",
-                    "priceType": "TRUE_RANGE",
-                    "value": 2230,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-10-01",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  },
-                  {
-                    "id": "tr5",
-                    "label": "2026-10-02 True Range（高値 68925 / 安値 67790 / 前日終値 69005 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-10-02",
-                    "priceType": "TRUE_RANGE",
-                    "value": 1215,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-10-02",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  },
-                  {
-                    "id": "tr6",
-                    "label": "2026-10-05 True Range（高値 70270 / 安値 68870 / 前日終値 68630 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-10-05",
-                    "priceType": "TRUE_RANGE",
-                    "value": 1640,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-10-05",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  },
-                  {
-                    "id": "tr7",
-                    "label": "2026-10-06 True Range（高値 71025 / 安値 69750 / 前日終値 70095 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-10-06",
-                    "priceType": "TRUE_RANGE",
-                    "value": 1275,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-10-06",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  },
-                  {
-                    "id": "tr8",
-                    "label": "2026-10-07 True Range（高値 71515 / 安値 70205 / 前日終値 70900 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-10-07",
-                    "priceType": "TRUE_RANGE",
-                    "value": 1310,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-10-07",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  },
-                  {
-                    "id": "tr9",
-                    "label": "2026-10-08 True Range（高値 70305 / 安値 69100 / 前日終値 70350 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-10-08",
-                    "priceType": "TRUE_RANGE",
-                    "value": 1250,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-10-08",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  },
-                  {
-                    "id": "tr10",
-                    "label": "2026-10-09 True Range（高値 69470 / 安値 68010 / 前日終値 69100 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-10-09",
-                    "priceType": "TRUE_RANGE",
-                    "value": 1460,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-10-09",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  },
-                  {
-                    "id": "tr11",
-                    "label": "2026-10-12 True Range（高値 69520 / 安値 68880 / 前日終値 69470 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-10-12",
-                    "priceType": "TRUE_RANGE",
-                    "value": 640,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-10-12",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  },
-                  {
-                    "id": "tr12",
-                    "label": "2026-10-13 True Range（高値 69245 / 安値 67225 / 前日終値 69155 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-10-13",
-                    "priceType": "TRUE_RANGE",
-                    "value": 2020,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-10-13",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  },
-                  {
-                    "id": "tr13",
-                    "label": "2026-10-14 True Range（高値 68575 / 安値 67695 / 前日終値 67960 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-10-14",
-                    "priceType": "TRUE_RANGE",
-                    "value": 880,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-10-14",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  },
-                  {
-                    "id": "tr14",
-                    "label": "2026-10-15 True Range（高値 68445 / 安値 64245 / 前日終値 68160 の最大変動幅）",
-                    "timeframe": "DAILY",
-                    "targetBar": "2026-10-15",
-                    "priceType": "TRUE_RANGE",
-                    "value": 4200,
-                    "source": "AUTO",
-                    "sourceDateTime": "2026-10-15",
-                    "batchGeneratedAt": "2026-10-15T23:44:35.249Z"
-                  }
-                ]
-              }
+              "value": null,
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null,
+              "calculator": null
             }
           ]
         },
@@ -417,7 +258,7 @@
       "rule": {
         "ruleId": "KDK-C2070",
         "directionRank": 1,
-        "conditionText": "init5RangePct >= 0.008447 AND init5Move >= 100",
+        "conditionText": "init5RangePct >= 0.008446 AND init5Move >= 100",
         "metrics": {
           "profitFactor": 1.4928870292887029,
           "winRate": 0.5075757575757576,
@@ -432,7 +273,7 @@
             {
               "feature": "init5RangePct",
               "operator": ">=",
-              "threshold": 0.008446594636110766,
+              "threshold": 0.008445945945945946,
               "description": "ザラ場開始から5本目までの値幅を始値で割った比率",
               "unit": "%",
               "availability": "AFTER_10M_5_BARS",
@@ -536,24 +377,24 @@
               "id": "prevHigh",
               "label": "前日高値",
               "timeframe": "PREVIOUS_DAY",
-              "targetBar": "2026-10-15",
+              "targetBar": "PREVIOUS",
               "priceType": "HIGH",
-              "value": 68445,
-              "source": "AUTO",
-              "sourceDateTime": "2026-10-15",
-              "batchGeneratedAt": "2026-10-15T23:44:35.249Z",
+              "value": null,
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null,
               "calculator": null
             },
             {
               "id": "prevLow",
               "label": "前日安値",
               "timeframe": "PREVIOUS_DAY",
-              "targetBar": "2026-10-15",
+              "targetBar": "PREVIOUS",
               "priceType": "LOW",
-              "value": 64245,
-              "source": "AUTO",
-              "sourceDateTime": "2026-10-15",
-              "batchGeneratedAt": "2026-10-15T23:44:35.249Z",
+              "value": null,
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null,
               "calculator": null
             }
           ]
@@ -624,37 +465,48 @@
       "direction": "LONG",
       "status": "READY",
       "rule": {
-        "ruleId": "KDK-E0013",
+        "ruleId": "KDK-X0001",
         "directionRank": 1,
-        "conditionText": "eveningInit3Pct >= 0.000927",
+        "conditionText": "init3RangePct <= 0.003145 AND init5Range <= 155",
         "metrics": {
-          "profitFactor": 1.500834295982544,
-          "winRate": 0.5880503144654088,
-          "averagePnL": 61.35220125786164,
-          "tradeCount": 318
+          "profitFactor": 1.806257521058965,
+          "winRate": 0.6158940397350994,
+          "averagePnL": 44.370860927152314,
+          "tradeCount": 151
         },
         "entry": {
-          "judgmentTime": "夕場3本目確定後",
-          "entryTime": "夕場4本目開始時",
-          "entryPriceDescription": "夕場4本目始値",
+          "judgmentTime": "夕場開始前",
+          "entryTime": "夕場開始時",
+          "entryPriceDescription": "夕場1本目始値",
           "conditions": [
             {
-              "feature": "eveningInit3Pct",
-              "operator": ">=",
-              "threshold": 0.0009274096843077301,
-              "description": "夕場開始から3本目までの価格変化率",
+              "feature": "init3RangePct",
+              "operator": "<=",
+              "threshold": 0.0031452039484778315,
+              "description": "ザラ場開始から3本目までの値幅を始値で割った比率",
               "unit": "%",
               "availability": "AFTER_10M_3_BARS",
-              "formula": "(EC3 - EO1) / EO1",
+              "formula": "(H1-3 - L1-3) / O1",
               "calculator": {
-                "kind": "PCT_CHANGE",
+                "kind": "RANGE_PCT",
                 "inputs": [
                   {
-                    "id": "close",
-                    "label": "3本目終値",
-                    "timeframe": "EVENING_10M",
-                    "targetBar": "3",
-                    "priceType": "CLOSE",
+                    "id": "high",
+                    "label": "1～3本目の最高値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1-3",
+                    "priceType": "HIGH",
+                    "value": null,
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
+                  },
+                  {
+                    "id": "low",
+                    "label": "1～3本目の最安値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1-3",
+                    "priceType": "LOW",
                     "value": null,
                     "source": "INPUT",
                     "sourceDateTime": null,
@@ -663,9 +515,49 @@
                   {
                     "id": "open",
                     "label": "1本目始値",
-                    "timeframe": "EVENING_10M",
+                    "timeframe": "DAY_10M",
                     "targetBar": "1",
                     "priceType": "OPEN",
+                    "value": null,
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
+                  }
+                ]
+              },
+              "value": null,
+              "source": "INPUT",
+              "sourceDateTime": null,
+              "batchGeneratedAt": null
+            },
+            {
+              "feature": "init5Range",
+              "operator": "<=",
+              "threshold": 155,
+              "description": "ザラ場開始から5本目までの高値と安値の差",
+              "unit": "円",
+              "availability": "AFTER_10M_5_BARS",
+              "formula": "H1-5 - L1-5",
+              "calculator": {
+                "kind": "RANGE",
+                "inputs": [
+                  {
+                    "id": "high",
+                    "label": "1～5本目の最高値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1-5",
+                    "priceType": "HIGH",
+                    "value": null,
+                    "source": "INPUT",
+                    "sourceDateTime": null,
+                    "batchGeneratedAt": null
+                  },
+                  {
+                    "id": "low",
+                    "label": "1～5本目の最安値",
+                    "timeframe": "DAY_10M",
+                    "targetBar": "1-5",
+                    "priceType": "LOW",
                     "value": null,
                     "source": "INPUT",
                     "sourceDateTime": null,
@@ -681,20 +573,20 @@
           ]
         },
         "exit": {
-          "scenarioName": "tp400_sl100",
+          "scenarioName": "tp500_sl150",
           "strategy": "FIXED_TP_SL",
           "description": null,
-          "takeProfit": 400,
-          "stopLoss": 100,
+          "takeProfit": 500,
+          "stopLoss": 150,
           "takeProfitAtrMultiplier": null,
           "stopLossAtrMultiplier": null,
           "recentLookbackBars": null,
           "inputs": [
             {
               "id": "entryPrice",
-              "label": "Entry価格（夕場4本目始値）",
+              "label": "Entry価格（夕場1本目始値）",
               "timeframe": "EVENING_10M",
-              "targetBar": "4",
+              "targetBar": "1",
               "priceType": "OPEN",
               "value": null,
               "source": "INPUT",
@@ -708,44 +600,44 @@
           {
             "year": "2021",
             "status": "PASS",
-            "tradeCount": 10,
-            "profitFactor": 1.2763157894736843,
-            "averagePnL": 21
+            "tradeCount": 6,
+            "profitFactor": 10.363636363636363,
+            "averagePnL": 85.83333333333333
           },
           {
             "year": "2022",
             "status": "PASS",
-            "tradeCount": 48,
-            "profitFactor": 1.4060446780551905,
-            "averagePnL": 32.1875
+            "tradeCount": 36,
+            "profitFactor": 1.2640264026402641,
+            "averagePnL": 22.22222222222222
           },
           {
             "year": "2023",
             "status": "PASS",
-            "tradeCount": 57,
-            "profitFactor": 1.1742081447963801,
-            "averagePnL": 13.508771929824562
+            "tradeCount": 78,
+            "profitFactor": 2.03956343792633,
+            "averagePnL": 48.84615384615385
           },
           {
             "year": "2024",
             "status": "PASS",
-            "tradeCount": 66,
-            "profitFactor": 1.3021370670596906,
-            "averagePnL": 31.060606060606062
+            "tradeCount": 18,
+            "profitFactor": 1.4625,
+            "averagePnL": 30.833333333333332
           },
           {
             "year": "2025",
             "status": "PASS",
-            "tradeCount": 69,
-            "profitFactor": 1.224466243508367,
-            "averagePnL": 28.18840579710145
+            "tradeCount": 13,
+            "profitFactor": 3.8333333333333335,
+            "averagePnL": 78.46153846153847
           },
           {
             "year": "2026",
-            "status": "PASS",
-            "tradeCount": 68,
-            "profitFactor": 1.8946280991735538,
-            "averagePnL": 191.02941176470588
+            "status": "NO_TRADE",
+            "tradeCount": 0,
+            "profitFactor": null,
+            "averagePnL": null
           }
         ]
       }
@@ -756,9 +648,9 @@
       "direction": "SHORT",
       "status": "READY",
       "rule": {
-        "ruleId": "KDK-X0047",
+        "ruleId": "KDK-X0046",
         "directionRank": 1,
-        "conditionText": "init3RangePct >= 0.006443 AND init5RangePct >= 0.010415",
+        "conditionText": "init3RangePct >= 0.006446 AND init5RangePct >= 0.010409",
         "metrics": {
           "profitFactor": 1.3538706679059886,
           "winRate": 0.5030674846625767,
@@ -773,7 +665,7 @@
             {
               "feature": "init3RangePct",
               "operator": ">=",
-              "threshold": 0.006442891889086083,
+              "threshold": 0.0064464141821112,
               "description": "ザラ場開始から3本目までの値幅を始値で割った比率",
               "unit": "%",
               "availability": "AFTER_10M_3_BARS",
@@ -824,7 +716,7 @@
             {
               "feature": "init5RangePct",
               "operator": ">=",
-              "threshold": 0.010415211630701597,
+              "threshold": 0.010408826919719151,
               "description": "ザラ場開始から5本目までの値幅を始値で割った比率",
               "unit": "%",
               "availability": "AFTER_10M_5_BARS",
